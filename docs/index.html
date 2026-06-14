@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WC2026 Scoreline Forecast</title>
+<style>
+  :root {
+    --bg: #0e1116; --card: #171b22; --line: #262c36; --fg: #e6e9ef;
+    --mut: #8b94a3; --bet: #2ea043; --caution: #d29922; --skip: #f85149;
+    --closing: #3b82f6; --preview: #6b7280;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header { padding: 28px 20px 8px; max-width: 1000px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  .sub { color: var(--mut); font-size: 0.85rem; }
+  .meta { color: var(--mut); font-size: 0.8rem; margin-top: 8px; }
+  main { max-width: 1000px; margin: 0 auto; padding: 8px 20px 60px; }
+  h2.day { font-size: 1rem; color: var(--mut); margin: 26px 0 10px;
+           border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  .grid { display: grid; gap: 10px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 16px; display: grid;
+    grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center;
+  }
+  .match { font-weight: 600; }
+  .ko { color: var(--mut); font-size: 0.8rem; font-weight: 400; }
+  .score { font-size: 1.5rem; font-weight: 700; text-align: right; }
+  .score small { font-size: 0.8rem; color: var(--mut); font-weight: 500; }
+  .row2 { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 14px;
+          align-items: center; color: var(--mut); font-size: 0.82rem; }
+  .wdl b { color: var(--fg); }
+  .alts { color: var(--mut); font-size: 0.8rem; }
+  .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: .04em;
+         padding: 2px 7px; border-radius: 999px; text-transform: uppercase; }
+  .tag.closing { background: rgba(59,130,246,.15); color: var(--closing); }
+  .tag.preview { background: rgba(107,114,128,.18); color: #9aa3b2; }
+  .verdict { font-weight: 700; }
+  .verdict.BET { color: var(--bet); } .verdict.CAUTION { color: var(--caution); }
+  .verdict.SKIP { color: var(--skip); }
+  .empty { color: var(--mut); padding: 40px 0; text-align: center; }
+  footer { max-width: 1000px; margin: 0 auto; padding: 20px;
+           color: var(--mut); font-size: 0.76rem; border-top: 1px solid var(--line); }
+  a { color: #58a6ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>World Cup 2026 — Scoreline Forecast</h1>
+  <div class="sub">Most-likely final score for each match, inverted from Pinnacle's closing line.</div>
+  <div class="meta" id="meta">Loading…</div>
+</header>
+<main id="app"><div class="empty">Loading predictions…</div></main>
+<footer>
+  <p><b>How to read it.</b> Each scoreline is the single most-likely exact result
+  (the mode of a Dixon-Coles goal model fit to the sharp market). <span class="tag closing">closing</span>
+  = captured ~45&nbsp;min pre-kickoff (the number to act on). <span class="tag preview">preview</span>
+  = current non-closing line, will move before kickoff. Verdict reflects market-fit
+  confidence (BET / CAUTION / SKIP). Probabilities are model estimates, not guarantees.</p>
+  <p>Updates automatically. Source data: Pinnacle. Not affiliated with any sportsbook.</p>
+</footer>
+
+<script>
+const REFRESH_MS = 180000; // re-fetch every 3 min
+
+function fmtKO(iso) {
+  if (!iso) return "TBD";
+  const d = new Date(iso);
+  return d.toLocaleString(undefined,
+    { weekday: "short", hour: "2-digit", minute: "2-digit" });
+}
+function dayLabel(dateStr) {
+  const d = new Date(dateStr + "T12:00:00Z");
+  return d.toLocaleDateString(undefined,
+    { weekday: "long", month: "short", day: "numeric" });
+}
+function pct(x) { return (x * 100).toFixed(0) + "%"; }
+
+function card(m) {
+  const alts = (m.top_scorelines || [])
+    .map(([s, q]) => `${s} ${pct(q)}`).join(" · ");
+  const tag = m.is_closing
+    ? '<span class="tag closing">closing</span>'
+    : '<span class="tag preview">preview</span>';
+  return `
+  <div class="card">
+    <div>
+      <div class="match">${m.home} <span class="ko">v</span> ${m.away}</div>
+      <div class="ko">${fmtKO(m.kickoff_utc)} &middot; your time</div>
+    </div>
+    <div class="score">${m.scoreline} <small>${pct(m.p_scoreline)}</small></div>
+    <div class="row2">
+      ${tag}
+      <span class="wdl">1X2 <b>${pct(m.p_home)}</b> / ${pct(m.p_draw)} / <b>${pct(m.p_away)}</b></span>
+      <span>xG ${m.xg_home}–${m.xg_away}</span>
+      <span class="verdict ${m.verdict}">${m.verdict}</span>
+      <span class="alts">alt: ${alts}</span>
+    </div>
+  </div>`;
+}
+
+function render(data) {
+  const app = document.getElementById("app");
+  const meta = document.getElementById("meta");
+  const gen = new Date(data.generated_at);
+  meta.innerHTML = `Model: <b>${data.model.devig_method}</b> de-vig, ρ=${data.model.rho}` +
+    ` &middot; updated ${gen.toLocaleString()}`;
+  const ms = data.matches || [];
+  if (!ms.length) { app.innerHTML = '<div class="empty">No upcoming matches.</div>'; return; }
+  const byDay = {};
+  for (const m of ms) (byDay[m.date] ??= []).push(m);
+  app.innerHTML = Object.keys(byDay).sort().map(day =>
+    `<h2 class="day">${dayLabel(day)}</h2>` +
+    `<div class="grid">${byDay[day].map(card).join("")}</div>`
+  ).join("");
+}
+
+async function load() {
+  try {
+    const r = await fetch("predictions.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    render(await r.json());
+  } catch (e) {
+    document.getElementById("meta").textContent = "Could not load predictions: " + e.message;
+  }
+}
+load();
+setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>

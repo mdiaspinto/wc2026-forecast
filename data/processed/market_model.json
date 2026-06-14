@@ -1,0 +1,35 @@
+{
+  "devig_method": "shin",
+  "rho": -0.06,
+  "ah_sign": null,
+  "calibrated_on": {
+    "leagues": [
+      "E0",
+      "D1",
+      "I1",
+      "SP1",
+      "F1"
+    ],
+    "seasons": [
+      "2021",
+      "2122",
+      "2223",
+      "2324"
+    ],
+    "n": 1500
+  },
+  "metrics": {
+    "scoreline_logloss": 2.8432435666048477,
+    "wdl_logloss": 0.9725030323114263,
+    "exact_rate": 0.15666666666666668,
+    "home_ece": 0.03603882601527989
+  },
+  "baseline": {
+    "mode_score": [
+      1,
+      1
+    ],
+    "empirical_dist_logloss": 2.9937404456778087,
+    "mode_exact_rate": 0.142
+  }
+}

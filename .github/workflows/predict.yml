@@ -1,0 +1,52 @@
+name: predict
+
+# Free, machine-independent compute: this scheduled job replaces the local
+# daily.py watcher. Each run captures any closing line now due (T-45) and rebuilds
+# docs/predictions.json, which GitHub Pages serves. The committed snapshot files
+# under data/odds/snapshots/ are the tick's state, so the job is fully stateless.
+on:
+  schedule:
+    # Best-effort every 5 min (UTC). GitHub may delay/drop scheduled runs under
+    # load, so effective capture lands ~T-45 to ~T-25 — see plan's timing caveat.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+# Don't let overlapping ticks race on the same commit.
+concurrency:
+  group: predict
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commit predictions.json + snapshots via the built-in token
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run publish tick
+        working-directory: src
+        env:
+          PINNACLE_API_KEY: ${{ secrets.PINNACLE_API_KEY }}
+        run: python -m market_scoreline.publish
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/predictions.json data/odds/snapshots || true
+          if git diff --cached --quiet; then
+            echo "No changes this tick."
+          else
+            git commit -m "predictions: update $(date -u +%FT%TZ)"
+            git push
+          fi

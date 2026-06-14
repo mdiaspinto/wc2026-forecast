@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Scratch / locks
+downloaded_files/
+**/driver_fixing.lock
+/tmp/
+
+# NOTE: data/odds/snapshots/ is intentionally TRACKED — the committed closing-line
+# captures are the cloud tick's idempotency state and the public prediction record.

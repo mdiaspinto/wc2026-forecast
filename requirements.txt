@@ -1,0 +1,6 @@
+# Runtime deps for the market_scoreline pipeline (local + GitHub Actions runner).
+# Floors match what the code is developed/tested against; no upper caps so the
+# runner can take security patches.
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
