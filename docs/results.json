@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-06-15T10:53:25.954856+00:00",
+  "model": {
+    "devig_method": "shin",
+    "rho": -0.06
+  },
+  "summary": {
+    "graded": 6,
+    "exact": 0,
+    "exact_pct": 0.0,
+    "result": 4,
+    "result_pct": 66.7
+  },
+  "matches": [
+    {
+      "date": "2026-06-11",
+      "home": "Mexico",
+      "away": "South Africa",
+      "kickoff_utc": "2026-06-11T19:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.167,
+      "actual": "2-0",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
+      "captured_at": "2026-06-11T18:15:00.349957+00:00"
+    },
+    {
+      "date": "2026-06-12",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "kickoff_utc": "2026-06-12T19:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.1342,
+      "actual": "1-1",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": false,
+      "captured_at": "2026-06-12T18:32:10.555534+00:00"
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Germany",
+      "away": "Cura\u00e7ao",
+      "kickoff_utc": "2026-06-14T17:00:00Z",
+      "predicted": "4-0",
+      "p_predicted": 0.1255,
+      "actual": "7-1",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
+      "captured_at": "2026-06-14T16:41:11.742824+00:00"
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Netherlands",
+      "away": "Japan",
+      "kickoff_utc": "2026-06-14T20:00:00Z",
+      "predicted": "1-1",
+      "p_predicted": 0.1311,
+      "actual": "2-2",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
+      "captured_at": "2026-06-14T19:19:09.522581+00:00"
+    },
+    {
+      "date": "2026-06-14",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "kickoff_utc": "2026-06-14T23:00:00Z",
+      "predicted": "0-0",
+      "p_predicted": 0.1443,
+      "actual": "1-0",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": false,
+      "captured_at": "2026-06-14T22:34:51.393053+00:00"
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "kickoff_utc": "2026-06-15T02:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.1361,
+      "actual": "5-1",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
+      "captured_at": "2026-06-15T01:27:31.271702+00:00"
+    }
+  ]
+}

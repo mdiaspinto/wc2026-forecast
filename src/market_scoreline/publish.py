@@ -206,6 +206,13 @@ def main() -> None:
     out.write_text(json.dumps(data, indent=2))
     print(f"Wrote {len(data['matches'])} predictions -> {out}")
 
+    # Grade past closing predictions vs actual results (best-effort; never fatal).
+    try:
+        from market_scoreline import results as R
+        R.build_results(model)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! results build failed: {e}")
+
 
 if __name__ == "__main__":
     main()
