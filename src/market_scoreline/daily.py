@@ -178,7 +178,7 @@ def main() -> None:
                     help="Sweep every active soccer league instead of --league.")
     ap.add_argument("--tz-offset", type=float, default=0.0,
                     help="Hours to shift UTC for date selection AND clock display.")
-    ap.add_argument("--lead", type=int, default=45, help="Capture this many min before kickoff.")
+    ap.add_argument("--lead", type=int, default=5, help="Capture this many min before kickoff.")
     ap.add_argument("--top-n", type=int, default=4, help="Alternative scorelines to surface.")
 
     mode = ap.add_mutually_exclusive_group()

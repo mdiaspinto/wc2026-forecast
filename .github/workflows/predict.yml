@@ -1,13 +1,14 @@
 name: predict
 
 # Free, machine-independent compute: this scheduled job replaces the local
-# daily.py watcher. Each run captures any closing line now due (T-45) and rebuilds
-# docs/predictions.json, which GitHub Pages serves. The committed snapshot files
-# under data/odds/snapshots/ are the tick's state, so the job is fully stateless.
+# daily.py watcher. Each run captures any closing line now due (target T-5) and
+# rebuilds docs/predictions.json, which GitHub Pages serves. The committed snapshot
+# files under data/odds/snapshots/ are the tick's state, so the job is fully stateless.
 on:
   schedule:
-    # Best-effort every 5 min (UTC). GitHub may delay/drop scheduled runs under
-    # load, so effective capture lands ~T-45 to ~T-25 — see plan's timing caveat.
+    # Best-effort every 5 min (UTC). To hit a tight T-5 capture despite the coarse,
+    # jittery cron, publish.py sleeps until the exact KO-5 instant when a kickoff is
+    # imminent (see SLEEP_HORIZON_MIN). A run may therefore last up to ~8 min.
     - cron: "*/5 * * * *"
   workflow_dispatch: {}
 

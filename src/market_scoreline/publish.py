@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -35,6 +36,13 @@ from market_scoreline.devig import devig_long
 from market_scoreline.inversion import constraints_from_devigged, invert
 
 ROOT = Path(__file__).resolve().parents[2]
+
+# A T-LEAD capture window only a few minutes wide can be missed by the coarse,
+# jittery */5 GitHub Actions cron. So when a tick fires and a kickoff's capture
+# instant (KO-lead) is imminent (within this many minutes), the job sleeps until
+# exactly that instant, then captures — turning a 5-min scheduler into a precise
+# T-lead capture. Sized just above one cron interval so some tick always catches it.
+SLEEP_HORIZON_MIN = 8
 DEFAULT_OUT = ROOT / "docs" / "predictions.json"
 
 
@@ -143,11 +151,38 @@ def _one_fixture(fx, date, now, model, lead, do_capture, top_n) -> dict | None:
     return row
 
 
+def _wait_for_imminent_capture(dates, lead, league_ids) -> None:
+    """If a game's capture instant (KO-lead) is imminent, sleep until exactly then,
+    so the coarse */5 cron still lands the closing capture near T-lead."""
+    now = datetime.now(timezone.utc)
+    soonest = None
+    for date in dates:
+        try:
+            fixtures = fetch.list_fixtures(date, league_ids, verbose=False)
+        except Exception:  # noqa: BLE001 — listing is best-effort here
+            continue
+        for fx in fixtures:
+            ko = fx["start_dt"]
+            if ko is None:
+                continue
+            target = ko - timedelta(minutes=lead)           # desired capture instant
+            if (now < target <= now + timedelta(minutes=SLEEP_HORIZON_MIN)
+                    and snapshots.latest_snapshot(date, fx["match_id"],
+                                                  fx["home"], fx["away"]) is None):
+                soonest = target if soonest is None else min(soonest, target)
+    if soonest is not None:
+        wait_s = (soonest - datetime.now(timezone.utc)).total_seconds()
+        if wait_s > 0:
+            print(f"Imminent kickoff: sleeping {wait_s:.0f}s to capture at T-{lead}...")
+            time.sleep(wait_s)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Cloud publish tick (Phase 7).")
     ap.add_argument("--horizon-days", type=int, default=2,
                     help="Cover today plus this many days ahead (default 2).")
-    ap.add_argument("--lead", type=int, default=45, help="Closing-capture lead minutes.")
+    ap.add_argument("--lead", type=int, default=5,
+                    help="Closing-capture lead minutes (capture at KO-lead; default 5).")
     ap.add_argument("--league", type=int, action="append", dest="leagues",
                     help="League id (repeatable). Default: WC 2026 (2686).")
     ap.add_argument("--top-n", type=int, default=4)
@@ -159,8 +194,11 @@ def main() -> None:
     model = P.load_model()
     league_ids = args.leagues or [fetch.WC_LEAGUE_ID]
     dates = _utc_dates(args.horizon_days)
-    print(f"Model: devig={model['devig_method']}, rho={model['rho']} | dates {dates[0]}..{dates[-1]}")
+    print(f"Model: devig={model['devig_method']}, rho={model['rho']} | "
+          f"lead=T-{args.lead} | dates {dates[0]}..{dates[-1]}")
 
+    if not args.no_capture:
+        _wait_for_imminent_capture(dates, args.lead, league_ids)
     data = build_predictions(dates, model, args.lead, not args.no_capture, league_ids, args.top_n)
 
     out = Path(args.out)
