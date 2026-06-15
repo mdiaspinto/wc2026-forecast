@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T17:27:05.154478+00:00",
+  "generated_at": "2026-06-15T18:55:05.554001+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -89,6 +89,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-06-15T01:27:31.271702+00:00"
+    },
+    {
+      "date": "2026-06-15",
+      "home": "Belgium",
+      "away": "Egypt",
+      "kickoff_utc": "2026-06-15T19:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.1299,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-15T18:55:00.319862+00:00"
     }
   ]
 }
