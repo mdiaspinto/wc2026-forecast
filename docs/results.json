@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T19:12:26.016217+00:00",
+  "generated_at": "2026-06-20T19:55:07.207618+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -141,6 +141,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-06-19T18:55:00.346184+00:00"
+    },
+    {
+      "date": "2026-06-20",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "kickoff_utc": "2026-06-20T20:00:00Z",
+      "predicted": "2-0",
+      "p_predicted": 0.1077,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-20T19:55:00.787466+00:00"
     }
   ]
 }
