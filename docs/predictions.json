@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T22:19:54.621168+00:00",
+  "generated_at": "2026-06-20T22:46:56.841490+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "2-0",
-      "p_scoreline": 0.1546,
-      "p_home": 0.8358,
-      "p_draw": 0.1234,
-      "p_away": 0.0408,
-      "xg_home": 2.67,
-      "xg_away": 0.47,
+      "p_scoreline": 0.1497,
+      "p_home": 0.8305,
+      "p_draw": 0.1256,
+      "p_away": 0.044,
+      "xg_home": 2.68,
+      "xg_away": 0.5,
       "top_scorelines": [
         [
           "2-0",
-          0.1546
+          0.1497
         ],
         [
           "3-0",
-          0.1377
+          0.1337
         ],
         [
           "1-0",
-          0.1125
+          0.1084
         ],
         [
           "4-0",
-          0.0919
+          0.0895
         ]
       ],
-      "residual": 0.01,
+      "residual": 0.0118,
       "verdict": "BET",
       "date": "2026-06-21",
       "match_id": 1620865471,
@@ -40,7 +40,7 @@
       "away": "Cura\u00e7ao",
       "kickoff_utc": "2026-06-21T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "0-1",
@@ -76,14 +76,14 @@
       "away": "Japan",
       "kickoff_utc": "2026-06-21T04:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "2-0",
       "p_scoreline": 0.1534,
       "p_home": 0.8774,
-      "p_draw": 0.0962,
-      "p_away": 0.0265,
+      "p_draw": 0.0961,
+      "p_away": 0.0264,
       "xg_home": 2.94,
       "xg_away": 0.4,
       "top_scorelines": [
@@ -97,7 +97,7 @@
         ],
         [
           "4-0",
-          0.1103
+          0.1104
         ],
         [
           "1-0",
@@ -112,12 +112,12 @@
       "away": "Saudi Arabia",
       "kickoff_utc": "2026-06-21T16:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "2-0",
-      "p_scoreline": 0.1291,
-      "p_home": 0.6721,
+      "p_scoreline": 0.1292,
+      "p_home": 0.6722,
       "p_draw": 0.2086,
       "p_away": 0.1192,
       "xg_home": 2.04,
@@ -125,7 +125,7 @@
       "top_scorelines": [
         [
           "2-0",
-          0.1291
+          0.1292
         ],
         [
           "1-0",
@@ -140,7 +140,7 @@
           0.0955
         ]
       ],
-      "residual": 0.0086,
+      "residual": 0.0085,
       "verdict": "BET",
       "date": "2026-06-21",
       "match_id": 1620858179,
@@ -148,7 +148,7 @@
       "away": "Iran",
       "kickoff_utc": "2026-06-21T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "1-0",
@@ -184,7 +184,7 @@
       "away": "Cape Verde",
       "kickoff_utc": "2026-06-21T22:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "0-1",
@@ -220,7 +220,7 @@
       "away": "Egypt",
       "kickoff_utc": "2026-06-22T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "1-0",
@@ -256,7 +256,7 @@
       "away": "Austria",
       "kickoff_utc": "2026-06-22T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     },
     {
       "scoreline": "3-0",
@@ -292,7 +292,7 @@
       "away": "Iraq",
       "kickoff_utc": "2026-06-22T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-20T22:19:54.621168+00:00"
+      "captured_at": "2026-06-20T22:46:56.841490+00:00"
     }
   ]
 }
