@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T21:45:05.122781+00:00",
+  "generated_at": "2026-06-21T22:14:23.378891+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -7,47 +7,11 @@
   "lead_minutes": 5,
   "matches": [
     {
-      "scoreline": "2-0",
-      "p_scoreline": 0.1548,
-      "p_home": 0.6986,
-      "p_draw": 0.2094,
-      "p_away": 0.092,
-      "xg_home": 1.94,
-      "xg_away": 0.56,
-      "top_scorelines": [
-        [
-          "2-0",
-          0.1548
-        ],
-        [
-          "1-0",
-          0.1544
-        ],
-        [
-          "3-0",
-          0.1
-        ],
-        [
-          "1-1",
-          0.0944
-        ]
-      ],
-      "residual": 0.0055,
-      "verdict": "BET",
-      "date": "2026-06-21",
-      "match_id": 1620849632,
-      "home": "Uruguay",
-      "away": "Cape Verde",
-      "kickoff_utc": "2026-06-21T22:00:00+00:00",
-      "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
-    },
-    {
       "scoreline": "0-1",
       "p_scoreline": 0.1328,
-      "p_home": 0.1545,
-      "p_draw": 0.2431,
-      "p_away": 0.6024,
+      "p_home": 0.1551,
+      "p_draw": 0.2435,
+      "p_away": 0.6014,
       "xg_home": 0.78,
       "xg_away": 1.76,
       "top_scorelines": [
@@ -57,11 +21,11 @@
         ],
         [
           "0-2",
-          0.1227
+          0.1225
         ],
         [
           "1-1",
-          0.1145
+          0.1147
         ],
         [
           "1-2",
@@ -76,7 +40,7 @@
       "away": "Egypt",
       "kickoff_utc": "2026-06-22T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "1-0",
@@ -112,7 +76,7 @@
       "away": "Austria",
       "kickoff_utc": "2026-06-22T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "3-0",
@@ -148,35 +112,35 @@
       "away": "Iraq",
       "kickoff_utc": "2026-06-22T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.13,
-      "p_home": 0.4119,
-      "p_draw": 0.2729,
-      "p_away": 0.3151,
-      "xg_home": 1.44,
-      "xg_away": 1.23,
+      "p_scoreline": 0.1306,
+      "p_home": 0.4111,
+      "p_draw": 0.274,
+      "p_away": 0.3149,
+      "xg_home": 1.43,
+      "xg_away": 1.22,
       "top_scorelines": [
         [
           "1-1",
-          0.13
+          0.1306
         ],
         [
           "1-0",
-          0.0924
+          0.0934
         ],
         [
           "2-1",
-          0.0883
+          0.0881
         ],
         [
           "0-1",
-          0.0779
+          0.0787
         ]
       ],
-      "residual": 0.005,
+      "residual": 0.0048,
       "verdict": "BET",
       "date": "2026-06-23",
       "match_id": 1620849626,
@@ -184,7 +148,7 @@
       "away": "Senegal",
       "kickoff_utc": "2026-06-23T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "0-1",
@@ -220,7 +184,7 @@
       "away": "Algeria",
       "kickoff_utc": "2026-06-23T03:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "2-0",
@@ -256,7 +220,7 @@
       "away": "Uzbekistan",
       "kickoff_utc": "2026-06-23T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "2-0",
@@ -292,7 +256,7 @@
       "away": "Ghana",
       "kickoff_utc": "2026-06-23T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     },
     {
       "scoreline": "0-1",
@@ -328,7 +292,7 @@
       "away": "Croatia",
       "kickoff_utc": "2026-06-23T23:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-21T21:45:05.122781+00:00"
+      "captured_at": "2026-06-21T22:14:23.378891+00:00"
     }
   ]
 }
