@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T02:27:25.073188+00:00",
+  "generated_at": "2026-06-21T03:55:07.884935+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -154,6 +154,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-06-20T19:55:00.787466+00:00"
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Tunisia",
+      "away": "Japan",
+      "kickoff_utc": "2026-06-21T04:00:00Z",
+      "predicted": "0-1",
+      "p_predicted": 0.1416,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-21T03:55:00.276567+00:00"
     }
   ]
 }
