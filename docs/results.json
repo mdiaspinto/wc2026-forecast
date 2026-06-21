@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T15:13:00.363109+00:00",
+  "generated_at": "2026-06-21T15:55:22.632601+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -167,6 +167,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-06-21T03:55:00.276567+00:00"
+    },
+    {
+      "date": "2026-06-21",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "kickoff_utc": "2026-06-21T16:00:00Z",
+      "predicted": "3-0",
+      "p_predicted": 0.1313,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-21T15:55:16.265064+00:00"
     }
   ]
 }
