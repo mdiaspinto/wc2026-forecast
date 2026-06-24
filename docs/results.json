@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-24T20:58:03.020300+00:00",
+  "generated_at": "2026-06-24T21:34:53.595406+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "summary": {
-    "graded": 17,
+    "graded": 18,
     "exact": 1,
-    "exact_pct": 5.9,
-    "result": 10,
-    "result_pct": 58.8
+    "exact_pct": 5.6,
+    "result": 11,
+    "result_pct": 61.1
   },
   "matches": [
     {
@@ -227,10 +227,10 @@
       "kickoff_utc": "2026-06-24T19:00:00Z",
       "predicted": "2-0",
       "p_predicted": 0.1164,
-      "actual": null,
-      "status": "in",
-      "exact_hit": null,
-      "result_hit": null,
+      "actual": "3-1",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
       "captured_at": "2026-06-24T18:58:11.621894+00:00"
     },
     {
