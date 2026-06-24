@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T18:16:59.274410+00:00",
+  "generated_at": "2026-06-24T18:58:19.705661+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -219,6 +219,32 @@
       "exact_hit": false,
       "result_hit": false,
       "captured_at": "2026-06-22T23:56:43.778257+00:00"
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "kickoff_utc": "2026-06-24T19:00:00Z",
+      "predicted": "2-0",
+      "p_predicted": 0.1164,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-24T18:58:11.621894+00:00"
+    },
+    {
+      "date": "2026-06-24",
+      "home": "Switzerland",
+      "away": "Canada",
+      "kickoff_utc": "2026-06-24T19:00:00Z",
+      "predicted": "1-1",
+      "p_predicted": 0.1388,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-06-24T18:58:11.089522+00:00"
     }
   ]
 }
