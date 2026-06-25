@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T22:55:11.092582+00:00",
+  "generated_at": "2026-06-25T23:19:53.055533+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -254,7 +254,7 @@
       "predicted": "1-1",
       "p_predicted": 0.129,
       "actual": null,
-      "status": "pre",
+      "status": "in",
       "exact_hit": null,
       "result_hit": null,
       "captured_at": "2026-06-25T22:55:00.637244+00:00"
@@ -267,7 +267,7 @@
       "predicted": "0-2",
       "p_predicted": 0.1352,
       "actual": null,
-      "status": "pre",
+      "status": "in",
       "exact_hit": null,
       "result_hit": null,
       "captured_at": "2026-06-25T22:55:01.040643+00:00"
