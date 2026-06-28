@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T10:01:26.386569+00:00",
+  "generated_at": "2026-06-28T10:52:17.020354+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,28 +8,28 @@
   "matches": [
     {
       "scoreline": "0-1",
-      "p_scoreline": 0.1379,
-      "p_home": 0.1596,
-      "p_draw": 0.2508,
-      "p_away": 0.5896,
-      "xg_home": 0.77,
-      "xg_away": 1.7,
+      "p_scoreline": 0.1406,
+      "p_home": 0.1597,
+      "p_draw": 0.2532,
+      "p_away": 0.5872,
+      "xg_home": 0.76,
+      "xg_away": 1.68,
       "top_scorelines": [
         [
           "0-1",
-          0.1379
+          0.1406
         ],
         [
           "0-2",
-          0.1226
+          0.1234
         ],
         [
           "1-1",
-          0.1174
+          0.118
         ],
         [
-          "1-2",
-          0.094
+          "0-0",
+          0.0945
         ]
       ],
       "residual": 0.0052,
@@ -40,20 +40,20 @@
       "away": "Canada",
       "kickoff_utc": "2026-06-28T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1254,
-      "p_home": 0.5674,
-      "p_draw": 0.2525,
-      "p_away": 0.1801,
+      "p_scoreline": 0.1243,
+      "p_home": 0.5663,
+      "p_draw": 0.2522,
+      "p_away": 0.1815,
       "xg_home": 1.7,
-      "xg_away": 0.85,
+      "xg_away": 0.86,
       "top_scorelines": [
         [
           "1-0",
-          0.1254
+          0.1243
         ],
         [
           "1-1",
@@ -61,14 +61,14 @@
         ],
         [
           "2-0",
-          0.1124
+          0.1116
         ],
         [
           "2-1",
-          0.096
+          0.0961
         ]
       ],
-      "residual": 0.0061,
+      "residual": 0.0063,
       "verdict": "BET",
       "date": "2026-06-29",
       "match_id": 1632130818,
@@ -76,35 +76,35 @@
       "away": "Japan",
       "kickoff_utc": "2026-06-29T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     },
     {
       "scoreline": "2-0",
-      "p_scoreline": 0.1323,
-      "p_home": 0.7105,
-      "p_draw": 0.1892,
-      "p_away": 0.1003,
-      "xg_home": 2.2,
-      "xg_away": 0.71,
+      "p_scoreline": 0.133,
+      "p_home": 0.7154,
+      "p_draw": 0.1868,
+      "p_away": 0.0977,
+      "xg_home": 2.22,
+      "xg_away": 0.7,
       "top_scorelines": [
         [
           "2-0",
-          0.1323
+          0.133
         ],
         [
           "1-0",
-          0.1152
+          0.1149
         ],
         [
           "3-0",
-          0.097
+          0.0983
         ],
         [
           "2-1",
-          0.0935
+          0.093
         ]
       ],
-      "residual": 0.0065,
+      "residual": 0.0064,
       "verdict": "BET",
       "date": "2026-06-29",
       "match_id": 1632164494,
@@ -112,7 +112,7 @@
       "away": "Paraguay",
       "kickoff_utc": "2026-06-29T20:30:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     },
     {
       "scoreline": "1-1",
@@ -148,7 +148,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-06-30T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     },
     {
       "scoreline": "1-1",
@@ -184,7 +184,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-06-30T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     },
     {
       "scoreline": "2-0",
@@ -220,7 +220,7 @@
       "away": "Sweden",
       "kickoff_utc": "2026-06-30T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T10:01:26.386569+00:00"
+      "captured_at": "2026-06-28T10:52:17.020354+00:00"
     }
   ]
 }
