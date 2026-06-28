@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T03:23:25.406924+00:00",
+  "generated_at": "2026-06-28T04:58:00.122849+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "0-1",
-      "p_scoreline": 0.1379,
-      "p_home": 0.1702,
-      "p_draw": 0.2576,
-      "p_away": 0.5721,
-      "xg_home": 0.79,
-      "xg_away": 1.65,
+      "p_scoreline": 0.1344,
+      "p_home": 0.1697,
+      "p_draw": 0.2543,
+      "p_away": 0.576,
+      "xg_home": 0.8,
+      "xg_away": 1.68,
       "top_scorelines": [
         [
           "0-1",
-          0.1379
+          0.1344
         ],
         [
           "1-1",
-          0.1205
+          0.1195
         ],
         [
           "0-2",
-          0.1191
+          0.1183
         ],
         [
-          "0-0",
-          0.0947
+          "1-2",
+          0.0944
         ]
       ],
-      "residual": 0.0051,
+      "residual": 0.0052,
       "verdict": "BET",
       "date": "2026-06-28",
       "match_id": 1632123645,
@@ -40,35 +40,35 @@
       "away": "Canada",
       "kickoff_utc": "2026-06-28T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1277,
-      "p_home": 0.5689,
-      "p_draw": 0.2532,
-      "p_away": 0.1778,
-      "xg_home": 1.69,
-      "xg_away": 0.84,
+      "p_scoreline": 0.1272,
+      "p_home": 0.5593,
+      "p_draw": 0.2564,
+      "p_away": 0.1843,
+      "xg_home": 1.67,
+      "xg_away": 0.85,
       "top_scorelines": [
         [
           "1-0",
-          0.1277
+          0.1272
         ],
         [
           "1-1",
-          0.1198
+          0.1213
         ],
         [
           "2-0",
-          0.1138
+          0.1117
         ],
         [
           "2-1",
-          0.0956
+          0.0954
         ]
       ],
-      "residual": 0.0058,
+      "residual": 0.0057,
       "verdict": "BET",
       "date": "2026-06-29",
       "match_id": 1632130818,
@@ -76,7 +76,7 @@
       "away": "Japan",
       "kickoff_utc": "2026-06-29T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     },
     {
       "scoreline": "2-0",
@@ -112,35 +112,35 @@
       "away": "Paraguay",
       "kickoff_utc": "2026-06-29T20:30:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1355,
-      "p_home": 0.4533,
-      "p_draw": 0.2884,
-      "p_away": 0.2583,
+      "p_scoreline": 0.1358,
+      "p_home": 0.452,
+      "p_draw": 0.2892,
+      "p_away": 0.2588,
       "xg_home": 1.37,
       "xg_away": 0.97,
       "top_scorelines": [
         [
           "1-1",
-          0.1355
+          0.1358
         ],
         [
           "1-0",
-          0.1236
+          0.1241
         ],
         [
           "0-0",
-          0.1032
+          0.104
         ],
         [
           "2-0",
-          0.0903
+          0.0902
         ]
       ],
-      "residual": 0.0069,
+      "residual": 0.0087,
       "verdict": "BET",
       "date": "2026-06-30",
       "match_id": 1632139499,
@@ -148,7 +148,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-06-30T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     },
     {
       "scoreline": "1-1",
@@ -184,7 +184,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-06-30T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     },
     {
       "scoreline": "2-0",
@@ -220,7 +220,7 @@
       "away": "Sweden",
       "kickoff_utc": "2026-06-30T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T03:23:25.406924+00:00"
+      "captured_at": "2026-06-28T04:58:00.122849+00:00"
     }
   ]
 }
