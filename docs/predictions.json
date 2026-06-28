@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T20:36:45.313780+00:00",
+  "generated_at": "2026-06-28T21:01:28.160109+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -40,32 +40,32 @@
       "away": "Japan",
       "kickoff_utc": "2026-06-29T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T20:36:45.313780+00:00"
+      "captured_at": "2026-06-28T21:01:28.160109+00:00"
     },
     {
       "scoreline": "2-0",
-      "p_scoreline": 0.1374,
-      "p_home": 0.7281,
-      "p_draw": 0.1818,
-      "p_away": 0.09,
-      "xg_home": 2.24,
-      "xg_away": 0.66,
+      "p_scoreline": 0.1367,
+      "p_home": 0.7223,
+      "p_draw": 0.1848,
+      "p_away": 0.0929,
+      "xg_home": 2.22,
+      "xg_away": 0.67,
       "top_scorelines": [
         [
           "2-0",
-          0.1374
+          0.1367
         ],
         [
           "1-0",
-          0.1177
+          0.1183
         ],
         [
           "3-0",
-          0.1026
+          0.1011
         ],
         [
           "2-1",
-          0.0913
+          0.0919
         ]
       ],
       "residual": 0.0059,
@@ -76,7 +76,7 @@
       "away": "Paraguay",
       "kickoff_utc": "2026-06-29T20:30:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T20:36:45.313780+00:00"
+      "captured_at": "2026-06-28T21:01:28.160109+00:00"
     },
     {
       "scoreline": "1-1",
@@ -112,7 +112,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-06-30T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T20:36:45.313780+00:00"
+      "captured_at": "2026-06-28T21:01:28.160109+00:00"
     },
     {
       "scoreline": "1-1",
@@ -148,7 +148,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-06-30T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T20:36:45.313780+00:00"
+      "captured_at": "2026-06-28T21:01:28.160109+00:00"
     },
     {
       "scoreline": "2-0",
@@ -184,7 +184,7 @@
       "away": "Sweden",
       "kickoff_utc": "2026-06-30T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-06-28T20:36:45.313780+00:00"
+      "captured_at": "2026-06-28T21:01:28.160109+00:00"
     }
   ]
 }
