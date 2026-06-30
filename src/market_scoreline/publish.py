@@ -206,6 +206,17 @@ def main() -> None:
     out.write_text(json.dumps(data, indent=2))
     print(f"Wrote {len(data['matches'])} predictions -> {out}")
 
+    # Tier-2 mirror for the offline QuinielaTracker: outright winner odds + alive
+    # teams, served from GitHub Pages so friends on betting-blocked networks still
+    # get fresh odds/results (best-effort; never fail the tick).
+    try:
+        from market_scoreline import outright
+        od = outright.write_outright(ROOT / "docs" / "odds.json")
+        print(f"Wrote outright mirror: {len(od['oddsByEn'])} priced, "
+              f"{len(od['aliveEn'])} alive -> docs/odds.json")
+    except Exception as e:  # noqa: BLE001 — mirror is optional, never fatal
+        print(f"  ! outright mirror failed: {e}")
+
     # Grade past closing predictions vs actual results (best-effort; never fatal).
     try:
         from market_scoreline import results as R
