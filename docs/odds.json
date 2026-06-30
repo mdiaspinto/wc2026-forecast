@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:14:54.383988+00:00",
+  "generated_at": "2026-06-30T23:44:05.676954+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
@@ -18,18 +18,17 @@
     "Ecuador": 10000,
     "Egypt": 40000,
     "England": 800,
-    "France": 198,
+    "France": 200,
     "Ghana": 50000,
     "Mexico": 5000,
-    "Morocco": 2200,
-    "Norway": 3000,
+    "Morocco": 2500,
+    "Norway": 3500,
     "Paraguay": 25000,
     "Portugal": 1300,
     "Senegal": 12500,
     "Spain": 750,
-    "Sweden": 50000,
     "Switzerland": 10000,
-    "USA": 3300
+    "USA": 3500
   },
   "aliveEn": [
     "Algeria",
@@ -56,7 +55,6 @@
     "Portugal",
     "Senegal",
     "Spain",
-    "Sweden",
     "Switzerland",
     "USA"
   ]
