@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T22:49:05.726829+00:00",
+  "generated_at": "2026-07-01T23:19:13.826316+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
@@ -7,7 +7,7 @@
     "Argentina": 450,
     "Australia": 40000,
     "Austria": 40000,
-    "Belgium": 5000,
+    "Belgium": 3300,
     "Bosnia and Herzegovina": 75000,
     "Brazil": 1100,
     "Canada": 25000,
@@ -18,12 +18,11 @@
     "England": 800,
     "France": 195,
     "Ghana": 50000,
-    "Mexico": 3290,
+    "Mexico": 2800,
     "Morocco": 2800,
     "Norway": 4000,
     "Paraguay": 40000,
     "Portugal": 1300,
-    "Senegal": 5000,
     "Spain": 750,
     "Switzerland": 10000,
     "USA": 3489
@@ -49,7 +48,6 @@
     "Norway",
     "Paraguay",
     "Portugal",
-    "Senegal",
     "Spain",
     "Switzerland",
     "USA"
