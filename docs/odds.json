@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T20:42:49.853827+00:00",
+  "generated_at": "2026-07-01T21:13:48.748186+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
@@ -16,17 +16,17 @@
     "Croatia": 20000,
     "Egypt": 40000,
     "England": 800,
-    "France": 190,
+    "France": 195,
     "Ghana": 50000,
-    "Mexico": 2800,
-    "Morocco": 2800,
-    "Norway": 3500,
+    "Mexico": 3000,
+    "Morocco": 3000,
+    "Norway": 4000,
     "Paraguay": 40000,
     "Portugal": 1300,
-    "Senegal": 12500,
-    "Spain": 800,
+    "Senegal": 5000,
+    "Spain": 750,
     "Switzerland": 10000,
-    "USA": 3300
+    "USA": 3500
   },
   "aliveEn": [
     "Algeria",
