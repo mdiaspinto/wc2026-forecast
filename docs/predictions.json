@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T23:17:54.103495+00:00",
+  "generated_at": "2026-07-03T23:41:57.394520+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -7,32 +7,32 @@
   "lead_minutes": 5,
   "matches": [
     {
-      "scoreline": "1-0",
-      "p_scoreline": 0.1463,
-      "p_home": 0.6751,
-      "p_draw": 0.2176,
-      "p_away": 0.1072,
-      "xg_home": 1.91,
-      "xg_away": 0.62,
+      "scoreline": "2-0",
+      "p_scoreline": 0.1476,
+      "p_home": 0.6858,
+      "p_draw": 0.2127,
+      "p_away": 0.1015,
+      "xg_home": 1.94,
+      "xg_away": 0.61,
       "top_scorelines": [
         [
-          "1-0",
-          0.1463
+          "2-0",
+          0.1476
         ],
         [
-          "2-0",
-          0.145
+          "1-0",
+          0.1467
         ],
         [
           "1-1",
-          0.1002
+          0.0978
         ],
         [
           "3-0",
-          0.0922
+          0.0953
         ]
       ],
-      "residual": 0.003,
+      "residual": 0.0037,
       "verdict": "BET",
       "date": "2026-07-04",
       "match_id": 1632183796,
@@ -40,7 +40,7 @@
       "away": "Ghana",
       "kickoff_utc": "2026-07-04T01:30:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-03T23:17:54.103495+00:00"
+      "captured_at": "2026-07-03T23:41:57.394520+00:00"
     },
     {
       "scoreline": "0-1",
@@ -76,7 +76,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-04T17:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-03T23:17:54.103495+00:00"
+      "captured_at": "2026-07-03T23:41:57.394520+00:00"
     },
     {
       "scoreline": "0-2",
@@ -112,7 +112,7 @@
       "away": "France",
       "kickoff_utc": "2026-07-04T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-03T23:17:54.103495+00:00"
+      "captured_at": "2026-07-03T23:41:57.394520+00:00"
     },
     {
       "scoreline": "1-1",
@@ -148,7 +148,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-03T23:17:54.103495+00:00"
+      "captured_at": "2026-07-03T23:41:57.394520+00:00"
     }
   ]
 }
