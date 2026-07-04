@@ -1,47 +1,11 @@
 {
-  "generated_at": "2026-07-04T20:55:00.000164+00:00",
+  "generated_at": "2026-07-04T21:12:26.324243+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "lead_minutes": 5,
   "matches": [
-    {
-      "scoreline": "0-2",
-      "p_scoreline": 0.1579,
-      "p_home": 0.0555,
-      "p_draw": 0.151,
-      "p_away": 0.7935,
-      "xg_home": 0.5,
-      "xg_away": 2.41,
-      "top_scorelines": [
-        [
-          "0-2",
-          0.1579
-        ],
-        [
-          "0-1",
-          0.1272
-        ],
-        [
-          "0-3",
-          0.1267
-        ],
-        [
-          "1-2",
-          0.0793
-        ]
-      ],
-      "residual": 0.0091,
-      "verdict": "BET",
-      "date": "2026-07-04",
-      "match_id": 1632241541,
-      "home": "Paraguay",
-      "away": "France",
-      "kickoff_utc": "2026-07-04T21:00:00+00:00",
-      "is_closing": true,
-      "captured_at": "2026-07-04T20:55:00.321291+00:00"
-    },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1159,
@@ -76,7 +40,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T20:55:00.000164+00:00"
+      "captured_at": "2026-07-04T21:12:26.324243+00:00"
     },
     {
       "scoreline": "1-1",
@@ -112,14 +76,14 @@
       "away": "England",
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T20:55:00.000164+00:00"
+      "captured_at": "2026-07-04T21:12:26.324243+00:00"
     },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1208,
       "p_home": 0.2388,
       "p_draw": 0.2542,
-      "p_away": 0.5069,
+      "p_away": 0.507,
       "xg_home": 1.1,
       "xg_away": 1.7,
       "top_scorelines": [
@@ -148,7 +112,7 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T20:55:00.000164+00:00"
+      "captured_at": "2026-07-04T21:12:26.324243+00:00"
     }
   ]
 }
