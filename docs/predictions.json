@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T19:03:30.471376+00:00",
+  "generated_at": "2026-07-04T19:35:14.694359+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "0-2",
-      "p_scoreline": 0.1576,
-      "p_home": 0.0509,
-      "p_draw": 0.1429,
-      "p_away": 0.8062,
-      "xg_home": 0.49,
+      "p_scoreline": 0.1569,
+      "p_home": 0.0517,
+      "p_draw": 0.1439,
+      "p_away": 0.8044,
+      "xg_home": 0.5,
       "xg_away": 2.48,
       "top_scorelines": [
         [
           "0-2",
-          0.1576
+          0.1569
         ],
         [
           "0-3",
-          0.1303
+          0.1295
         ],
         [
           "0-1",
-          0.1233
+          0.123
         ],
         [
           "0-4",
-          0.0808
+          0.0801
         ]
       ],
-      "residual": 0.0127,
+      "residual": 0.011,
       "verdict": "BET",
       "date": "2026-07-04",
       "match_id": 1632241541,
@@ -40,7 +40,7 @@
       "away": "France",
       "kickoff_utc": "2026-07-04T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T19:03:30.471376+00:00"
+      "captured_at": "2026-07-04T19:35:14.694359+00:00"
     },
     {
       "scoreline": "1-1",
@@ -76,7 +76,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T19:03:30.471376+00:00"
+      "captured_at": "2026-07-04T19:35:14.694359+00:00"
     },
     {
       "scoreline": "1-1",
@@ -112,7 +112,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T19:03:30.471376+00:00"
+      "captured_at": "2026-07-04T19:35:14.694359+00:00"
     },
     {
       "scoreline": "1-1",
@@ -148,7 +148,7 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-04T19:03:30.471376+00:00"
+      "captured_at": "2026-07-04T19:35:14.694359+00:00"
     }
   ]
 }
