@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T20:58:41.362566+00:00",
+  "generated_at": "2026-07-05T21:27:38.694628+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1412,
-      "p_home": 0.3135,
-      "p_draw": 0.3043,
-      "p_away": 0.3821,
+      "p_scoreline": 0.1413,
+      "p_home": 0.3138,
+      "p_draw": 0.3047,
+      "p_away": 0.3814,
       "xg_home": 1.04,
       "xg_away": 1.18,
       "top_scorelines": [
         [
           "1-1",
-          0.1412
+          0.1413
         ],
         [
           "0-1",
-          0.1195
+          0.1198
         ],
         [
           "0-0",
-          0.1159
+          0.1164
         ],
         [
           "1-0",
-          0.1047
+          0.1051
         ]
       ],
-      "residual": 0.0052,
+      "residual": 0.0054,
       "verdict": "BET",
       "date": "2026-07-06",
       "match_id": 1632260301,
@@ -40,7 +40,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T20:58:41.362566+00:00"
+      "captured_at": "2026-07-05T21:27:38.694628+00:00"
     },
     {
       "scoreline": "1-1",
@@ -76,7 +76,7 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T20:58:41.362566+00:00"
+      "captured_at": "2026-07-05T21:27:38.694628+00:00"
     },
     {
       "scoreline": "1-1",
@@ -112,7 +112,7 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-07T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T20:58:41.362566+00:00"
+      "captured_at": "2026-07-05T21:27:38.694628+00:00"
     },
     {
       "scoreline": "2-0",
@@ -148,14 +148,14 @@
       "away": "Egypt",
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T20:58:41.362566+00:00"
+      "captured_at": "2026-07-05T21:27:38.694628+00:00"
     },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1391,
-      "p_home": 0.2799,
+      "p_home": 0.28,
       "p_draw": 0.2993,
-      "p_away": 0.4208,
+      "p_away": 0.4206,
       "xg_home": 0.98,
       "xg_away": 1.27,
       "top_scorelines": [
@@ -184,7 +184,7 @@
       "away": "Colombia",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T20:58:41.362566+00:00"
+      "captured_at": "2026-07-05T21:27:38.694628+00:00"
     }
   ]
 }
