@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T02:27:36.691989+00:00",
+  "generated_at": "2026-07-05T03:47:08.291849+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
@@ -10,11 +10,10 @@
     "Egypt": 25000,
     "England": 1100,
     "France": 180,
-    "Mexico": 2500,
-    "Morocco": 2500,
+    "Mexico": 2800,
+    "Morocco": 2800,
     "Norway": 4000,
-    "Paraguay": 40000,
-    "Portugal": 1397,
+    "Portugal": 1400,
     "Spain": 600,
     "Switzerland": 6600,
     "USA": 3300
@@ -30,7 +29,6 @@
     "Mexico",
     "Morocco",
     "Norway",
-    "Paraguay",
     "Portugal",
     "Spain",
     "Switzerland",
