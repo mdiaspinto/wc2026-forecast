@@ -8,6 +8,10 @@ venv/
 # OS
 .DS_Store
 
+# Source spreadsheets: hold participant PII (emails, phone numbers). This repo is
+# public + published to Pages, so the raw workbooks stay local and are never tracked.
+*.xlsx
+
 # Scratch / locks
 downloaded_files/
 **/driver_fixing.lock
