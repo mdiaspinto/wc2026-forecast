@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T15:04:41.506607+00:00",
+  "generated_at": "2026-07-05T15:36:46.017813+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1118,
-      "p_home": 0.5513,
-      "p_draw": 0.2375,
-      "p_away": 0.2113,
-      "xg_home": 1.87,
-      "xg_away": 1.09,
+      "p_scoreline": 0.1104,
+      "p_home": 0.5493,
+      "p_draw": 0.2357,
+      "p_away": 0.215,
+      "xg_home": 1.89,
+      "xg_away": 1.12,
       "top_scorelines": [
         [
           "1-1",
-          0.1118
+          0.1104
         ],
         [
           "2-1",
-          0.0988
+          0.0987
         ],
         [
           "2-0",
-          0.091
+          0.0885
         ],
         [
           "1-0",
-          0.0908
+          0.0871
         ]
       ],
-      "residual": 0.0124,
+      "residual": 0.0128,
       "verdict": "BET",
       "date": "2026-07-05",
       "match_id": 1632234844,
@@ -40,7 +40,7 @@
       "away": "Norway",
       "kickoff_utc": "2026-07-05T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     },
     {
       "scoreline": "1-1",
@@ -76,35 +76,35 @@
       "away": "England",
       "kickoff_utc": "2026-07-06T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.12,
-      "p_home": 0.2457,
-      "p_draw": 0.2532,
-      "p_away": 0.5011,
-      "xg_home": 1.13,
-      "xg_away": 1.7,
+      "p_scoreline": 0.1181,
+      "p_home": 0.2458,
+      "p_draw": 0.2502,
+      "p_away": 0.504,
+      "xg_home": 1.15,
+      "xg_away": 1.74,
       "top_scorelines": [
         [
           "1-1",
-          0.12
+          0.1181
         ],
         [
           "1-2",
-          0.0964
+          0.0967
         ],
         [
           "0-1",
-          0.0934
+          0.0901
         ],
         [
           "0-2",
-          0.0853
+          0.084
         ]
       ],
-      "residual": 0.0071,
+      "residual": 0.007,
       "verdict": "BET",
       "date": "2026-07-06",
       "match_id": 1632283992,
@@ -112,20 +112,20 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1206,
-      "p_home": 0.3652,
-      "p_draw": 0.2589,
-      "p_away": 0.3759,
+      "p_scoreline": 0.1208,
+      "p_home": 0.3651,
+      "p_draw": 0.2591,
+      "p_away": 0.3758,
       "xg_home": 1.46,
       "xg_away": 1.49,
       "top_scorelines": [
         [
           "1-1",
-          0.1206
+          0.1208
         ],
         [
           "1-2",
@@ -137,10 +137,10 @@
         ],
         [
           "0-1",
-          0.0709
+          0.0711
         ]
       ],
-      "residual": 0.0097,
+      "residual": 0.0107,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632265684,
@@ -148,7 +148,7 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-07T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     },
     {
       "scoreline": "2-0",
@@ -184,7 +184,7 @@
       "away": "Egypt",
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     },
     {
       "scoreline": "1-1",
@@ -220,7 +220,7 @@
       "away": "Colombia",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-05T15:04:41.506607+00:00"
+      "captured_at": "2026-07-05T15:36:46.017813+00:00"
     }
   ]
 }
