@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T20:26:43.526275+00:00",
+  "generated_at": "2026-07-06T21:05:30.121971+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -491,6 +491,13 @@
       "away": "England",
       "score": "2-3",
       "winner": "England"
+    },
+    {
+      "date": "2026-07-06",
+      "home": "Portugal",
+      "away": "Spain",
+      "score": "0-1",
+      "winner": "Spain"
     }
   ]
 }
