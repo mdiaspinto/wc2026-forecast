@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T05:54:22.668625+00:00",
+  "generated_at": "2026-07-06T06:58:54.598548+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -349,6 +349,148 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-07-04T20:55:00.321291+00:00"
+    }
+  ],
+  "knockouts": [
+    {
+      "date": "2026-06-28",
+      "home": "South Africa",
+      "away": "Canada",
+      "score": "0-1",
+      "winner": "Canada"
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Brazil",
+      "away": "Japan",
+      "score": "2-1",
+      "winner": "Brazil"
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Germany",
+      "away": "Paraguay",
+      "score": "1-1",
+      "winner": "Paraguay"
+    },
+    {
+      "date": "2026-06-29",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "score": "1-1",
+      "winner": "Morocco"
+    },
+    {
+      "date": "2026-06-30",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "score": "1-2",
+      "winner": "Norway"
+    },
+    {
+      "date": "2026-06-30",
+      "home": "France",
+      "away": "Sweden",
+      "score": "3-0",
+      "winner": "France"
+    },
+    {
+      "date": "2026-06-30",
+      "home": "Mexico",
+      "away": "Ecuador",
+      "score": "2-0",
+      "winner": "Mexico"
+    },
+    {
+      "date": "2026-07-01",
+      "home": "England",
+      "away": "Congo DR",
+      "score": "2-1",
+      "winner": "England"
+    },
+    {
+      "date": "2026-07-01",
+      "home": "Belgium",
+      "away": "Senegal",
+      "score": "3-2",
+      "winner": "Belgium"
+    },
+    {
+      "date": "2026-07-01",
+      "home": "United States",
+      "away": "Bosnia and Herzegovina",
+      "score": "2-0",
+      "winner": "United States"
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Spain",
+      "away": "Austria",
+      "score": "3-0",
+      "winner": "Spain"
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Portugal",
+      "away": "Croatia",
+      "score": "2-1",
+      "winner": "Portugal"
+    },
+    {
+      "date": "2026-07-02",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "score": "2-0",
+      "winner": "Switzerland"
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Australia",
+      "away": "Egypt",
+      "score": "1-1",
+      "winner": "Egypt"
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "score": "3-2",
+      "winner": "Argentina"
+    },
+    {
+      "date": "2026-07-03",
+      "home": "Colombia",
+      "away": "Ghana",
+      "score": "1-0",
+      "winner": "Colombia"
+    },
+    {
+      "date": "2026-07-04",
+      "home": "Canada",
+      "away": "Morocco",
+      "score": "0-3",
+      "winner": "Morocco"
+    },
+    {
+      "date": "2026-07-04",
+      "home": "Paraguay",
+      "away": "France",
+      "score": "0-1",
+      "winner": "France"
+    },
+    {
+      "date": "2026-07-05",
+      "home": "Brazil",
+      "away": "Norway",
+      "score": "1-2",
+      "winner": "Norway"
+    },
+    {
+      "date": "2026-07-05",
+      "home": "Mexico",
+      "away": "England",
+      "score": "2-3",
+      "winner": "England"
     }
   ]
 }

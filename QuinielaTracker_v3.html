@@ -672,10 +672,11 @@ function simulateCore(S, pinsByKey, N, prizes, focus, rng, ratings, sens) {
   focus = focus || [];
   const focusScores = focus.map(() => new Float32Array(N));
 
-  // Optional sensitivity pass: for one focus bracket, accumulate its fractional 1st-place
-  // credit split by which side won each given frontier node — all from the SAME draws, so
-  // the cross-match comparison shares randomness and has far lower variance than separate
-  // sims. refA/refB are the two possible winners of each node (constant across draws).
+  // Optional sensitivity pass: for one focus bracket, accumulate its in-the-money
+  // (Top 3) indicator split by which side won each given frontier node — all from the
+  // SAME draws, so the cross-match comparison shares randomness and has far lower
+  // variance than separate sims. refA/refB are each node's two possible winners
+  // (constant across draws).
   const sNodes = sens ? sens.nodes : null, sLen = sNodes ? sNodes.length : 0;
   const sFocus = sens ? sens.focus : -1;
   const winA = new Float64Array(sLen), cntA = new Float64Array(sLen);
@@ -709,7 +710,7 @@ function simulateCore(S, pinsByKey, N, prizes, focus, rng, ratings, sens) {
     for (let f = 0; f < focus.length; f++) focusScores[f][d] = scores[focus[f]];
 
     // rank inside this draw: extract top tiers until 3 positions are filled
-    let pos = 1, prev = Infinity, cum = 0, topVal = -Infinity, topK = 1;
+    let pos = 1, prev = Infinity, cum = 0, moneyVal = Infinity;
     while (pos <= 3 && cum < nB) {
       // find max strictly below prev
       let v = -Infinity;
@@ -722,7 +723,7 @@ function simulateCore(S, pinsByKey, N, prizes, focus, rng, ratings, sens) {
       for (let p = pos; p <= pos + k - 1 && p <= 3; p++) pool += prizes[p - 1];
       const share = pool / k;
       const isTop = pos === 1, inMoney = pos <= 3;
-      if (isTop) { topVal = v; topK = k; }
+      if (inMoney) moneyVal = v;   // ends at the lowest in-the-money tier value
       for (let i = 0; i < nB; i++) if (scores[i] === v) {
         if (isTop) win[i] += 1 / k;
         if (inMoney) top3[i] += 1;
@@ -731,9 +732,9 @@ function simulateCore(S, pinsByKey, N, prizes, focus, rng, ratings, sens) {
       pos += k; prev = v; cum += k;
     }
 
-    // sensitivity: bucket the focus bracket's 1st-place credit by each node's winner
+    // sensitivity: bucket the focus bracket's Top-3 indicator by each node's winner
     if (sLen) {
-      const cr = (sFocus >= 0 && scores[sFocus] === topVal) ? 1 / topK : 0;
+      const cr = (sFocus >= 0 && scores[sFocus] >= moneyVal) ? 1 : 0;
       for (let k = 0; k < sLen; k++) {
         const n = sNodes[k];
         if (d === 0) { refA[k] = occ[cA[n]]; refB[k] = occ[cB[n]]; }
@@ -1262,7 +1263,7 @@ function renderBracket(){
         return `<div class="${cls}" data-node="${nid}" data-team="${esc(team)}" data-committed="${committedHere}">
           ${flag(team)}<span class="tn lensable" data-lensteam="${esc(team)}">${esc(team)}</span>${isWin?'<span class="wbadge">'+ADVANCE[rd]+'</span>':''}${kmMark}${lock}</div>`;
       }
-      const keyTag=km?`<div class="keytag">Key for ${esc(state.keyMatchFor)} · swings P(1st) ${pctStr(km.diff)}</div>`:'';
+      const keyTag=km?`<div class="keytag">Key for ${esc(state.keyMatchFor)} · swings P(Top 3) ${pctStr(km.diff)}</div>`:'';
       return `<div class="match ${w!==undefined?'decided':''} ${isKey?'keymatch':''}">${keyTag}${teamRow(a)}${teamRow(b)}</div>`;
     }).join('');
     return `<div class="col"><div class="colh cond">${MATCH_LABEL[rd]} <em>· win = ${PTS[rd]}p</em></div>${cards||''}</div>`;
@@ -1378,11 +1379,12 @@ function ensureBracketSim(){
   },activeRatings());
 }
 
-/* ---- Key match: which undecided match most swings a tracked bracket's P(1st) ----
+/* ---- Key match: which undecided match most swings a tracked bracket's P(Top 3) ----
    "Importance" is bracket-relative. One sim estimates, for every match with two known
-   possible winners, the bracket's P(1st) conditional on each side advancing — bucketed
-   from the SAME draws (shared randomness), so |P(1st|A) − P(1st|B)| is a stable, low-
-   variance comparison across matches. The largest swing is the match that matters most. */
+   possible winners, the bracket's P(Top 3) conditional on each side advancing — bucketed
+   from the SAME draws (shared randomness), so |P(Top3|A) − P(Top3|B)| is a stable, low-
+   variance comparison across matches. The largest swing is the match that matters most.
+   A bracket already at 0% Top 3 has no key match: nothing can swing a dead hand. */
 function frontierMatches(dec){
   // undecided nodes whose BOTH child occupants are already known => exactly two outcomes
   const occ=occupantsOf(dec), out=[];
@@ -1417,6 +1419,12 @@ async function computeKeyMatch(){
   const res=await new Promise(r=>SIM.run(pins,50000,[],r,activeRatings(),{focus:b.id,nodes}));
   state.sim.running=false;
   if(myRun!==_kmRun||state.keyMatchFor!==name)return; // superseded by a newer run
+  // Dead hand: no remaining outcome puts this bracket in the money -> no key match.
+  if(!(res.ptop3&&res.ptop3[b.id]>0)){
+    state.keyMatchNode=null; state.keyMatchInfo={dead:true,bracket:name};
+    setKeyNote(`${name}: 0% Top 3 — no key match`);
+    renderBracket(); ensureBracketSim(); return;
+  }
   const S=res.sens; let best=null;
   for(let k=0;k<fm.length;k++){
     const pa=S.pA[k],pb=S.pB[k],diff=Math.abs(pa-pb);
@@ -1424,7 +1432,7 @@ async function computeKeyMatch(){
   }
   state.keyMatchNode=best.id; state.keyMatchInfo={best,bracket:name};
   const fav=best.pa>=best.pb?best.a:best.b;
-  setKeyNote(`${esc(best.a)} vs ${esc(best.b)} · ${name} prefers ${esc(fav)} (swing ${pctStr(best.diff)})`);
+  setKeyNote(`${esc(best.a)} vs ${esc(best.b)} · ${name} prefers ${esc(fav)} (swings P(Top 3) ${pctStr(best.diff)})`);
   renderBracket();
   ensureBracketSim(); // make sure the mini-board's scenario sim is current
 }
@@ -1547,7 +1555,7 @@ const MIRROR={ url:'https://mdiaspinto.github.io/wc2026-forecast/odds.json' };
 // Pinnacle (English) -> app (Spanish) team names. Most resolve via each team's
 // `en` field; a few of Pinnacle's spellings differ and need an explicit alias.
 const _en2es={}; for(const es in DATA.teams){const en=DATA.teams[es].en; if(en)_en2es[en]=es;}
-const _PIN_ALIAS={'USA':'Estados Unidos','Bosnia and Herzegovina':'Bosnia y Herzegovina','Curacao':'Curazao'};
+const _PIN_ALIAS={'USA':'Estados Unidos','Bosnia and Herzegovina':'Bosnia y Herzegovina','Curacao':'Curazao','Congo DR':'República Democrática del Congo'};
 function pinToApp(en){return _PIN_ALIAS[en]||_en2es[en]||null;}
 // strip Pinnacle prop-market suffixes so "France (Corners)" reads as "France"
 function pinClean(n){return n.replace(/\s*\((Corners|Bookings|Cards|Shots[^)]*|Offsides|Throw[^)]*)\)\s*$/i,'').trim();}
@@ -1602,11 +1610,15 @@ async function fetchMirror(){
   for(const en of (j.aliveEn||[])){const es=pinToApp(pinClean(en)); if(es)alive.add(es);}
   return {oddsByApp,alive,generated_at:j.generated_at};
 }
-/* Graded final scores from the same Pages feed, as {winner,loser} pairs in app names.
-   Feeds Rule B of inferCommitted: it lets a played match's loser be pinned into the
-   bracket even after both its teams are eliminated. Draws (penalty-shootout knockouts
-   show their regulation draw here) carry no winner, so they're skipped and left to the
-   alive-set survivor rule. Best-effort — the bracket still works from odds alone. */
+/* Played knockout matches from the same Pages feed, as {winner,loser} pairs in app
+   names. Feeds Rule B of inferCommitted, which pins each played match into the
+   bracket. Preferred source is the feed's `knockouts` array: complete (every KO
+   match, not just ones we graded) and with an EXPLICIT winner, so penalty shootouts
+   resolve too. Older feeds without it fall back to the graded `matches` table,
+   restricted to knockout dates (group results must never reach the bracket) and to
+   decisive scores (a shootout reads as a draw there — winner unknown, left to the
+   alive-set survivor rule). Best-effort — the bracket still works from odds alone. */
+const KO_START='2026-06-28'; // first Round-of-32 kickoff
 async function fetchPlayed(){
   const url=MIRROR.url.replace(/odds\.json(\?.*)?$/,'results.json');
   const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),6000);
@@ -1615,8 +1627,17 @@ async function fetchPlayed(){
     if(!r.ok)throw new Error('HTTP '+r.status); j=await r.json();
   } finally { clearTimeout(t); }
   const out=[];
+  if(Array.isArray(j.knockouts)&&j.knockouts.length){
+    for(const m of j.knockouts){
+      const w=pinToApp(pinClean(m.winner||''));
+      const l=pinToApp(pinClean(m.winner===m.home?m.away:m.home));
+      if(w&&l)out.push({winner:w,loser:l});
+    }
+    return out;
+  }
   for(const m of (j.matches||[])){
     if(m.status!=='post'||!m.actual)continue;
+    if(!m.date||m.date<KO_START)continue;            // knockout matches only
     const mm=/^(\d+)-(\d+)$/.exec(m.actual); if(!mm)continue;
     const h=+mm[1],a=+mm[2]; if(h===a)continue;      // draw -> winner unknown, defer to alive
     const home=pinToApp(pinClean(m.home)), away=pinToApp(pinClean(m.away));
@@ -1625,30 +1646,24 @@ async function fetchPlayed(){
   }
   return out;
 }
-/* Reflect every already-played knockout match on the committed layer, using two
-   independent, order-free signals applied to a fixed point. The old bottom-up
-   "one direct opponent still alive" rule got permanently STUCK once BOTH teams of
-   an early match were eliminated (e.g. Germany v Paraguay after Paraguay went on
-   and later lost): that node never resolved, which in turn blocked every node above
-   it, so a team that had already reached the quarterfinals never showed as advanced.
+/* Reflect every already-played knockout match on the committed layer.
 
+     Rule B (played results): two teams' bracket paths cross at exactly ONE node, so
+       a knockout result (winner w, loser l) identifies its match node outright — and
+       both child regions with it: w won its own child region to get there, l won the
+       other. Three certain facts per result, no eliminations needed. fetchPlayed
+       guarantees the list is knockout-only, so a group result can never be mistaken
+       for a bracket match. (The old version only back-filled a loser into a fully-
+       eliminated region, which left first-round outcomes blank whenever the feed
+       was missing a match — e.g. one decided on penalties.)
      Rule A (survivor): if a node's whole subtree has exactly ONE still-alive team,
        that team advanced through the node — it beat everyone below, whoever they
-       were. This resolves the live frontier even when a node's direct opponents are
-       both already out (their winner went on and lost later).
-     Rule B (played back-fill): a graded knockout result (winner w, loser l) pins the
-       loser into its slot ONLY when it can't be group-stage noise from results.json:
-       the winner must be the confirmed occupant of its own child, and the loser's
-       entire child region must be fully eliminated — so l is the only team that could
-       occupy it. This fills the one thing Rule A can't: a match whose two teams are
-       BOTH now out. (That earlier Germany v Paraguay is recovered from the later
-       Paraguay v France result, which places Paraguay as the loser one round up.)
+       were. Covers any match the results feed doesn't have yet.
 
-   Neither rule can mis-commit: Rule A commits a forced survivor; Rule B only writes
-   into a region with no surviving alternative. */
+   Neither rule can mis-commit: Rule B writes facts read off a final score; Rule A
+   commits a forced survivor. */
 function inferCommitted(alive, played){
   const dec={}, sub=ENG.subtreeTeams;
-  const aliveInSub=id=>{let c=0,last;for(const t of sub.get(id)){if(alive.has(t)){c++;last=t;}}return[c,last];};
   const isInternal=id=>{const n=ENG.nodes.get(id);return !!(n&&n.children);};
   // the unique node where two teams' bracket paths meet (one in each child subtree)
   function meeting(w,l){
@@ -1659,24 +1674,22 @@ function inferCommitted(alive, played){
     }
     return null;
   }
+  // Rule B — pin each played knockout match: node winner + both child-region winners.
+  for(const p of (played||[])){
+    const m=meeting(p.winner,p.loser); if(!m)continue;
+    const[N,cw,cl]=m;
+    if(isInternal(cw)&&dec[cw]===undefined)dec[cw]=p.winner;
+    if(isInternal(cl)&&dec[cl]===undefined)dec[cl]=p.loser;
+    if(dec[N]===undefined)dec[N]=p.winner;
+  }
+  // Rule A — a subtree with a single survivor was won by that survivor.
   let changed=true;
   while(changed){
     changed=false;
-    // Rule A — a subtree with a single survivor was won by that survivor.
     for(const[id,n]of ENG.nodes){
       if(!n.children||dec[id]!==undefined)continue;
-      const[c,last]=aliveInSub(id); if(c===1){dec[id]=last;changed=true;}
-    }
-    // Rule B — back-fill a played match's loser into a fully-eliminated region.
-    const occ=occupantsOf(dec);
-    for(const p of (played||[])){
-      if(alive.has(p.loser))continue;                  // a knockout loser is always out
-      const m=meeting(p.winner,p.loser); if(!m)continue;
-      const[N,cw,cl]=m;
-      if(occ[cw]===p.winner && aliveInSub(cl)[0]===0){  // winner confirmed, loser side dead
-        if(isInternal(cl)&&dec[cl]===undefined){dec[cl]=p.loser;changed=true;}
-        if(dec[N]===undefined){dec[N]=p.winner;changed=true;}
-      }
+      let c=0,last; for(const t of sub.get(id)){if(alive.has(t)){c++;last=t;if(c>1)break;}}
+      if(c===1){dec[id]=last;changed=true;}
     }
   }
   return dec;

@@ -23,6 +23,9 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUT = ROOT / "docs" / "results.json"
 ESPN_URL = ("https://site.api.espn.com/apis/site/v2/sports/soccer/"
             "fifa.world/scoreboard?dates={ymd}")
+# First Round-of-32 kickoff. Everything on/after this date is a knockout match, so
+# the `knockouts` feed below can never be polluted by group-stage results.
+KO_START = "2026-06-28"
 # ESPN display names that differ from our canonical (Pinnacle) spellings.
 _FIX = {
     "Czechia": "Czech Republic",
@@ -63,7 +66,34 @@ def _espn_day(ymd: str) -> list[dict]:
         out.append({"home": _canon(h["team"]["displayName"]),
                     "away": _canon(a["team"]["displayName"]),
                     "hg": _int(h.get("score")), "ag": _int(a.get("score")),
+                    "hwin": bool(h.get("winner")), "awin": bool(a.get("winner")),
                     "state": state})
+    return out
+
+
+def _knockouts() -> list[dict]:
+    """Every completed knockout-stage match with an EXPLICIT winner. ESPN's per-
+    competitor `winner` flag decides penalty shootouts too (where the regulation
+    score is a draw), which the graded `matches` table cannot express. Consumed by
+    the QuinielaTracker to pin played matches into its bracket."""
+    day = datetime.strptime(KO_START, "%Y-%m-%d").date()
+    end = datetime.now(timezone.utc).date() + timedelta(days=1)   # tz slack
+    out, seen = [], set()
+    while day <= end:
+        for ev in _espn_day(day.strftime("%Y%m%d")):
+            if ev["state"] != "post":
+                continue
+            w = (ev["home"] if ev["hwin"] else ev["away"] if ev["awin"] else
+                 # no flag: fall back to the score, decisive only
+                 ev["home"] if (ev["hg"] or 0) > (ev["ag"] or 0) else
+                 ev["away"] if (ev["ag"] or 0) > (ev["hg"] or 0) else None)
+            key = frozenset((ev["home"], ev["away"]))   # KO pairs meet at most once
+            if w is None or key in seen:
+                continue
+            seen.add(key)
+            out.append({"date": day.isoformat(), "home": ev["home"], "away": ev["away"],
+                        "score": f"{ev['hg']}-{ev['ag']}", "winner": w})
+        day += timedelta(days=1)
     return out
 
 
@@ -136,6 +166,7 @@ def build_results(model: dict, out_path: Path = DEFAULT_OUT) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "model": {"devig_method": model["devig_method"], "rho": model["rho"]},
         "summary": summary, "matches": rows,
+        "knockouts": _knockouts(),
     }
     out = Path(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
