@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T15:32:49.378754+00:00",
+  "generated_at": "2026-07-06T16:39:33.904311+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1205,
-      "p_home": 0.2356,
-      "p_draw": 0.2534,
-      "p_away": 0.511,
-      "xg_home": 1.09,
-      "xg_away": 1.7,
+      "p_scoreline": 0.1213,
+      "p_home": 0.2433,
+      "p_draw": 0.2554,
+      "p_away": 0.5013,
+      "xg_home": 1.11,
+      "xg_away": 1.68,
       "top_scorelines": [
         [
           "1-1",
-          0.1205
+          0.1213
         ],
         [
           "0-1",
-          0.0976
+          0.0966
         ],
         [
           "1-2",
-          0.0968
+          0.0963
         ],
         [
           "0-2",
-          0.089
+          0.087
         ]
       ],
-      "residual": 0.0103,
+      "residual": 0.0107,
       "verdict": "BET",
       "date": "2026-07-06",
       "match_id": 1632283992,
@@ -40,35 +40,35 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-06T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-06T15:32:49.378754+00:00"
+      "captured_at": "2026-07-06T16:39:33.904311+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1173,
-      "p_home": 0.4015,
-      "p_draw": 0.2543,
-      "p_away": 0.3442,
-      "xg_home": 1.58,
-      "xg_away": 1.45,
+      "p_scoreline": 0.1168,
+      "p_home": 0.4082,
+      "p_draw": 0.2536,
+      "p_away": 0.3382,
+      "xg_home": 1.6,
+      "xg_away": 1.44,
       "top_scorelines": [
         [
           "1-1",
-          0.1173
+          0.1168
         ],
         [
           "2-1",
-          0.0875
+          0.0882
         ],
         [
           "1-2",
-          0.0802
+          0.0793
         ],
         [
           "1-0",
-          0.0697
+          0.0699
         ]
       ],
-      "residual": 0.0121,
+      "residual": 0.0124,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632265684,
@@ -76,7 +76,7 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-07T00:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-06T15:32:49.378754+00:00"
+      "captured_at": "2026-07-06T16:39:33.904311+00:00"
     },
     {
       "scoreline": "2-0",
@@ -112,35 +112,35 @@
       "away": "Egypt",
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-06T15:32:49.378754+00:00"
+      "captured_at": "2026-07-06T16:39:33.904311+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1384,
+      "p_scoreline": 0.1383,
       "p_home": 0.2705,
-      "p_draw": 0.2978,
-      "p_away": 0.4318,
-      "xg_home": 0.96,
+      "p_draw": 0.2973,
+      "p_away": 0.4322,
+      "xg_home": 0.97,
       "xg_away": 1.29,
       "top_scorelines": [
         [
           "1-1",
-          0.1384
+          0.1383
         ],
         [
           "0-1",
-          0.1274
+          0.1271
         ],
         [
           "0-0",
-          0.1127
+          0.1121
         ],
         [
           "1-0",
-          0.0933
+          0.093
         ]
       ],
-      "residual": 0.0086,
+      "residual": 0.0087,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632314983,
@@ -148,7 +148,7 @@
       "away": "Colombia",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-06T15:32:49.378754+00:00"
+      "captured_at": "2026-07-06T16:39:33.904311+00:00"
     }
   ]
 }
