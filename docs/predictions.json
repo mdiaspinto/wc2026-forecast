@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T22:07:10.249909+00:00",
+  "generated_at": "2026-07-07T22:34:20.862675+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -10,8 +10,8 @@
       "scoreline": "1-0",
       "p_scoreline": 0.1259,
       "p_home": 0.6012,
-      "p_draw": 0.2401,
-      "p_away": 0.1588,
+      "p_draw": 0.24,
+      "p_away": 0.1587,
       "xg_home": 1.8,
       "xg_away": 0.81,
       "top_scorelines": [
@@ -25,7 +25,7 @@
         ],
         [
           "1-1",
-          0.1139
+          0.1138
         ],
         [
           "2-1",
@@ -40,7 +40,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T22:07:10.249909+00:00"
+      "captured_at": "2026-07-07T22:34:20.862675+00:00"
     }
   ]
 }
