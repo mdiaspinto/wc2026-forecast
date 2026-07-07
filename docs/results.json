@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-07T22:34:27.581183+00:00",
+  "generated_at": "2026-07-07T22:58:14.068413+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "summary": {
-    "graded": 26,
+    "graded": 27,
     "exact": 3,
-    "exact_pct": 11.5,
-    "result": 17,
-    "result_pct": 65.4
+    "exact_pct": 11.1,
+    "result": 18,
+    "result_pct": 66.7
   },
   "matches": [
     {
@@ -370,10 +370,10 @@
       "kickoff_utc": "2026-07-07T20:00:00Z",
       "predicted": "1-1",
       "p_predicted": 0.1398,
-      "actual": null,
-      "status": "in",
-      "exact_hit": null,
-      "result_hit": null,
+      "actual": "0-0",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
       "captured_at": "2026-07-07T19:55:00.186974+00:00"
     }
   ],
@@ -538,6 +538,13 @@
       "away": "Egypt",
       "score": "3-2",
       "winner": "Argentina"
+    },
+    {
+      "date": "2026-07-07",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "score": "0-0",
+      "winner": "Switzerland"
     }
   ]
 }
