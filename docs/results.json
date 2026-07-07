@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:55:07.148984+00:00",
+  "generated_at": "2026-07-07T20:30:29.293975+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -371,7 +371,7 @@
       "predicted": "1-1",
       "p_predicted": 0.1398,
       "actual": null,
-      "status": "pre",
+      "status": "in",
       "exact_hit": null,
       "result_hit": null,
       "captured_at": "2026-07-07T19:55:00.186974+00:00"

@@ -1,47 +1,11 @@
 {
-  "generated_at": "2026-07-07T19:55:00.000164+00:00",
+  "generated_at": "2026-07-07T20:30:19.621114+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "lead_minutes": 5,
   "matches": [
-    {
-      "scoreline": "1-1",
-      "p_scoreline": 0.1398,
-      "p_home": 0.2827,
-      "p_draw": 0.3021,
-      "p_away": 0.4152,
-      "xg_home": 0.98,
-      "xg_away": 1.24,
-      "top_scorelines": [
-        [
-          "1-1",
-          0.1398
-        ],
-        [
-          "0-1",
-          0.127
-        ],
-        [
-          "0-0",
-          0.1164
-        ],
-        [
-          "1-0",
-          0.0982
-        ]
-      ],
-      "residual": 0.0173,
-      "verdict": "BET",
-      "date": "2026-07-07",
-      "match_id": 1632314983,
-      "home": "Switzerland",
-      "away": "Colombia",
-      "kickoff_utc": "2026-07-07T20:00:00+00:00",
-      "is_closing": true,
-      "captured_at": "2026-07-07T19:55:00.186974+00:00"
-    },
     {
       "scoreline": "1-0",
       "p_scoreline": 0.1269,
@@ -76,7 +40,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T19:55:00.000164+00:00"
+      "captured_at": "2026-07-07T20:30:19.621114+00:00"
     }
   ]
 }
