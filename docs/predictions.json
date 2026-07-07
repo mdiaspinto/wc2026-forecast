@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T02:39:29.969854+00:00",
+  "generated_at": "2026-07-07T04:04:20.137134+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "2-0",
-      "p_scoreline": 0.1552,
-      "p_home": 0.7104,
-      "p_draw": 0.202,
-      "p_away": 0.0876,
-      "xg_home": 2.0,
-      "xg_away": 0.56,
+      "p_scoreline": 0.1529,
+      "p_home": 0.7056,
+      "p_draw": 0.2036,
+      "p_away": 0.0908,
+      "xg_home": 1.99,
+      "xg_away": 0.57,
       "top_scorelines": [
         [
           "2-0",
-          0.1552
+          0.1529
         ],
         [
           "1-0",
-          0.1504
+          0.1482
         ],
         [
           "3-0",
-          0.1033
+          0.1015
         ],
         [
           "1-1",
-          0.0917
+          0.093
         ]
       ],
-      "residual": 0.0086,
+      "residual": 0.0081,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632315073,
@@ -40,35 +40,35 @@
       "away": "Egypt",
       "kickoff_utc": "2026-07-07T16:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T02:39:29.969854+00:00"
+      "captured_at": "2026-07-07T04:04:20.137134+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1375,
-      "p_home": 0.2695,
-      "p_draw": 0.294,
-      "p_away": 0.4365,
+      "p_scoreline": 0.1372,
+      "p_home": 0.269,
+      "p_draw": 0.2931,
+      "p_away": 0.4379,
       "xg_home": 0.98,
-      "xg_away": 1.32,
+      "xg_away": 1.33,
       "top_scorelines": [
         [
           "1-1",
-          0.1375
+          0.1372
         ],
         [
           "0-1",
-          0.1245
+          0.1239
         ],
         [
           "0-0",
-          0.108
+          0.107
         ],
         [
           "1-0",
-          0.0905
+          0.0898
         ]
       ],
-      "residual": 0.0088,
+      "residual": 0.0089,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632314983,
@@ -76,7 +76,7 @@
       "away": "Colombia",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T02:39:29.969854+00:00"
+      "captured_at": "2026-07-07T04:04:20.137134+00:00"
     },
     {
       "scoreline": "1-0",
@@ -112,7 +112,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T02:39:29.969854+00:00"
+      "captured_at": "2026-07-07T04:04:20.137134+00:00"
     }
   ]
 }
