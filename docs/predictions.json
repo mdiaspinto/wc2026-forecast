@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:08:07.685274+00:00",
+  "generated_at": "2026-07-07T19:55:00.000164+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,67 +8,67 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1387,
-      "p_home": 0.2789,
-      "p_draw": 0.2974,
-      "p_away": 0.4237,
-      "xg_home": 0.99,
-      "xg_away": 1.28,
+      "p_scoreline": 0.1398,
+      "p_home": 0.2827,
+      "p_draw": 0.3021,
+      "p_away": 0.4152,
+      "xg_home": 0.98,
+      "xg_away": 1.24,
       "top_scorelines": [
         [
           "1-1",
-          0.1387
+          0.1398
         ],
         [
           "0-1",
-          0.1242
+          0.127
         ],
         [
           "0-0",
-          0.1107
+          0.1164
         ],
         [
           "1-0",
-          0.0941
+          0.0982
         ]
       ],
-      "residual": 0.0117,
+      "residual": 0.0173,
       "verdict": "BET",
       "date": "2026-07-07",
       "match_id": 1632314983,
       "home": "Switzerland",
       "away": "Colombia",
       "kickoff_utc": "2026-07-07T20:00:00+00:00",
-      "is_closing": false,
-      "captured_at": "2026-07-07T19:08:07.685274+00:00"
+      "is_closing": true,
+      "captured_at": "2026-07-07T19:55:00.186974+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1305,
-      "p_home": 0.6192,
-      "p_draw": 0.2352,
-      "p_away": 0.1456,
-      "xg_home": 1.82,
-      "xg_away": 0.77,
+      "p_scoreline": 0.1269,
+      "p_home": 0.6179,
+      "p_draw": 0.234,
+      "p_away": 0.1481,
+      "xg_home": 1.84,
+      "xg_away": 0.79,
       "top_scorelines": [
         [
           "1-0",
-          0.1305
+          0.1269
         ],
         [
           "2-0",
-          0.1248
+          0.1226
         ],
         [
           "1-1",
-          0.1111
+          0.1109
         ],
         [
           "2-1",
-          0.0956
+          0.0963
         ]
       ],
-      "residual": 0.0067,
+      "residual": 0.0068,
       "verdict": "BET",
       "date": "2026-07-09",
       "match_id": 1632336437,
@@ -76,7 +76,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-07T19:08:07.685274+00:00"
+      "captured_at": "2026-07-07T19:55:00.000164+00:00"
     }
   ]
 }
