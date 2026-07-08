@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T16:22:59.513281+00:00",
+  "generated_at": "2026-07-08T16:56:17.602552+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1309,
-      "p_home": 0.612,
-      "p_draw": 0.2383,
-      "p_away": 0.1497,
-      "xg_home": 1.8,
-      "xg_away": 0.77,
+      "p_scoreline": 0.1253,
+      "p_home": 0.609,
+      "p_draw": 0.2367,
+      "p_away": 0.1542,
+      "xg_home": 1.82,
+      "xg_away": 0.8,
       "top_scorelines": [
         [
           "1-0",
-          0.1309
+          0.1253
         ],
         [
           "2-0",
-          0.1236
+          0.12
         ],
         [
           "1-1",
-          0.1125
+          0.1123
         ],
         [
           "2-1",
-          0.0956
+          0.0966
         ]
       ],
-      "residual": 0.0077,
+      "residual": 0.008,
       "verdict": "BET",
       "date": "2026-07-09",
       "match_id": 1632336437,
@@ -40,14 +40,14 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-08T16:22:59.513281+00:00"
+      "captured_at": "2026-07-08T16:56:17.602552+00:00"
     },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1117,
-      "p_home": 0.5937,
+      "p_home": 0.5935,
       "p_draw": 0.2342,
-      "p_away": 0.1721,
+      "p_away": 0.1722,
       "xg_home": 1.87,
       "xg_away": 0.91,
       "top_scorelines": [
@@ -57,18 +57,18 @@
         ],
         [
           "1-0",
-          0.1093
+          0.1092
         ],
         [
           "2-0",
-          0.1084
+          0.1083
         ],
         [
           "2-1",
           0.0988
         ]
       ],
-      "residual": 0.008,
+      "residual": 0.0078,
       "verdict": "BET",
       "date": "2026-07-10",
       "match_id": 1632370821,
@@ -76,7 +76,7 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-08T16:22:59.513281+00:00"
+      "captured_at": "2026-07-08T16:56:17.602552+00:00"
     }
   ]
 }
