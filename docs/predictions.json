@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T10:29:30.535155+00:00",
+  "generated_at": "2026-07-09T13:29:13.018078+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -9,11 +9,11 @@
     {
       "scoreline": "1-0",
       "p_scoreline": 0.1314,
-      "p_home": 0.6087,
-      "p_draw": 0.2399,
-      "p_away": 0.1514,
-      "xg_home": 1.79,
-      "xg_away": 0.77,
+      "p_home": 0.6045,
+      "p_draw": 0.2416,
+      "p_away": 0.1539,
+      "xg_home": 1.78,
+      "xg_away": 0.78,
       "top_scorelines": [
         [
           "1-0",
@@ -21,18 +21,18 @@
         ],
         [
           "2-0",
-          0.1232
+          0.1224
         ],
         [
           "1-1",
-          0.1132
+          0.114
         ],
         [
           "2-1",
           0.0955
         ]
       ],
-      "residual": 0.0074,
+      "residual": 0.008,
       "verdict": "BET",
       "date": "2026-07-09",
       "match_id": 1632336437,
@@ -40,7 +40,7 @@
       "away": "Morocco",
       "kickoff_utc": "2026-07-09T20:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-09T10:29:30.535155+00:00"
+      "captured_at": "2026-07-09T13:29:13.018078+00:00"
     },
     {
       "scoreline": "1-1",
@@ -76,35 +76,35 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-09T10:29:30.535155+00:00"
+      "captured_at": "2026-07-09T13:29:13.018078+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1177,
-      "p_home": 0.229,
-      "p_draw": 0.2483,
-      "p_away": 0.5227,
-      "xg_home": 1.09,
-      "xg_away": 1.76,
+      "p_scoreline": 0.1166,
+      "p_home": 0.2291,
+      "p_draw": 0.2466,
+      "p_away": 0.5243,
+      "xg_home": 1.11,
+      "xg_away": 1.78,
       "top_scorelines": [
         [
           "1-1",
-          0.1177
+          0.1166
         ],
         [
           "1-2",
-          0.0976
+          0.0977
         ],
         [
           "0-1",
-          0.0948
+          0.093
         ],
         [
           "0-2",
-          0.0892
+          0.0884
         ]
       ],
-      "residual": 0.008,
+      "residual": 0.0081,
       "verdict": "BET",
       "date": "2026-07-11",
       "match_id": 1632351958,
@@ -112,7 +112,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-09T10:29:30.535155+00:00"
+      "captured_at": "2026-07-09T13:29:13.018078+00:00"
     }
   ]
 }
