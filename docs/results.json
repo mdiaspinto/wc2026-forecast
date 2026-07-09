@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T19:15:01.962659+00:00",
+  "generated_at": "2026-07-09T19:57:38.213639+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -375,6 +375,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-07-07T19:55:00.186974+00:00"
+    },
+    {
+      "date": "2026-07-09",
+      "home": "France",
+      "away": "Morocco",
+      "kickoff_utc": "2026-07-09T20:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.1206,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-07-09T19:57:29.729026+00:00"
     }
   ],
   "knockouts": [
