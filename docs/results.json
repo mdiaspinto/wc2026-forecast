@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-09T21:41:58.406650+00:00",
+  "generated_at": "2026-07-09T22:11:28.160627+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "summary": {
-    "graded": 27,
+    "graded": 28,
     "exact": 3,
-    "exact_pct": 11.1,
-    "result": 18,
-    "result_pct": 66.7
+    "exact_pct": 10.7,
+    "result": 19,
+    "result_pct": 67.9
   },
   "matches": [
     {
@@ -383,10 +383,10 @@
       "kickoff_utc": "2026-07-09T20:00:00Z",
       "predicted": "1-0",
       "p_predicted": 0.1206,
-      "actual": null,
-      "status": "in",
-      "exact_hit": null,
-      "result_hit": null,
+      "actual": "2-0",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": true,
       "captured_at": "2026-07-09T19:57:29.729026+00:00"
     }
   ],
@@ -558,6 +558,13 @@
       "away": "Colombia",
       "score": "0-0",
       "winner": "Switzerland"
+    },
+    {
+      "date": "2026-07-09",
+      "home": "France",
+      "away": "Morocco",
+      "score": "2-0",
+      "winner": "France"
     }
   ]
 }
