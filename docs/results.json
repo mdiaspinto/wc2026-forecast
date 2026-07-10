@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T20:40:37.606896+00:00",
+  "generated_at": "2026-07-10T21:06:52.695208+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "summary": {
-    "graded": 28,
+    "graded": 29,
     "exact": 3,
-    "exact_pct": 10.7,
+    "exact_pct": 10.3,
     "result": 19,
-    "result_pct": 67.9
+    "result_pct": 65.5
   },
   "matches": [
     {
@@ -396,10 +396,10 @@
       "kickoff_utc": "2026-07-10T19:00:00Z",
       "predicted": "1-1",
       "p_predicted": 0.1099,
-      "actual": null,
-      "status": "in",
-      "exact_hit": null,
-      "result_hit": null,
+      "actual": "2-1",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": false,
       "captured_at": "2026-07-10T18:59:37.370011+00:00"
     }
   ],
@@ -578,6 +578,13 @@
       "away": "Morocco",
       "score": "2-0",
       "winner": "France"
+    },
+    {
+      "date": "2026-07-10",
+      "home": "Spain",
+      "away": "Belgium",
+      "score": "2-1",
+      "winner": "Spain"
     }
   ]
 }
