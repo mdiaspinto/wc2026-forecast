@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T14:41:41.367746+00:00",
+  "generated_at": "2026-07-10T15:37:21.596376+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,20 +8,20 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1094,
-      "p_home": 0.5994,
-      "p_draw": 0.2297,
-      "p_away": 0.1709,
-      "xg_home": 1.92,
+      "p_scoreline": 0.1092,
+      "p_home": 0.6005,
+      "p_draw": 0.2293,
+      "p_away": 0.1702,
+      "xg_home": 1.93,
       "xg_away": 0.93,
       "top_scorelines": [
         [
           "1-1",
-          0.1094
+          0.1092
         ],
         [
           "2-0",
-          0.1065
+          0.1066
         ],
         [
           "1-0",
@@ -32,7 +32,7 @@
           0.0992
         ]
       ],
-      "residual": 0.0073,
+      "residual": 0.0103,
       "verdict": "BET",
       "date": "2026-07-10",
       "match_id": 1632370821,
@@ -40,20 +40,20 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-10T14:41:41.367746+00:00"
+      "captured_at": "2026-07-10T15:37:21.596376+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1178,
+      "p_scoreline": 0.1177,
       "p_home": 0.2387,
-      "p_draw": 0.2492,
-      "p_away": 0.5121,
+      "p_draw": 0.2491,
+      "p_away": 0.5122,
       "xg_home": 1.13,
       "xg_away": 1.75,
       "top_scorelines": [
         [
           "1-1",
-          0.1178
+          0.1177
         ],
         [
           "1-2",
@@ -61,11 +61,11 @@
         ],
         [
           "0-1",
-          0.0918
+          0.0917
         ],
         [
           "0-2",
-          0.0861
+          0.086
         ]
       ],
       "residual": 0.0084,
@@ -76,7 +76,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-10T14:41:41.367746+00:00"
+      "captured_at": "2026-07-10T15:37:21.596376+00:00"
     },
     {
       "scoreline": "1-0",
@@ -112,7 +112,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-10T14:41:41.367746+00:00"
+      "captured_at": "2026-07-10T15:37:21.596376+00:00"
     }
   ]
 }
