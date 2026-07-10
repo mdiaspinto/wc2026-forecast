@@ -1,23 +1,21 @@
 {
-  "generated_at": "2026-07-10T00:09:07.859436+00:00",
+  "generated_at": "2026-07-10T00:56:45.030431+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
-    "Argentina": 395,
+    "Argentina": 425,
     "Belgium": 3300,
-    "England": 490,
-    "France": 195,
-    "Morocco": 3000,
-    "Norway": 1400,
-    "Spain": 399,
-    "Switzerland": 3300
+    "England": 475,
+    "France": 150,
+    "Norway": 1600,
+    "Spain": 425,
+    "Switzerland": 4000
   },
   "aliveEn": [
     "Argentina",
     "Belgium",
     "England",
     "France",
-    "Morocco",
     "Norway",
     "Spain",
     "Switzerland"
