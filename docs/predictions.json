@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T23:42:27.468841+00:00",
+  "generated_at": "2026-07-10T00:09:06.515684+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,28 +8,28 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1119,
-      "p_home": 0.5891,
-      "p_draw": 0.2347,
-      "p_away": 0.1762,
-      "xg_home": 1.87,
+      "p_scoreline": 0.1133,
+      "p_home": 0.5821,
+      "p_draw": 0.2375,
+      "p_away": 0.1804,
+      "xg_home": 1.85,
       "xg_away": 0.93,
       "top_scorelines": [
         [
           "1-1",
-          0.1119
+          0.1133
         ],
         [
           "1-0",
-          0.1072
+          0.1079
         ],
         [
           "2-0",
-          0.1064
+          0.1057
         ],
         [
           "2-1",
-          0.0989
+          0.0988
         ]
       ],
       "residual": 0.0081,
@@ -40,7 +40,7 @@
       "away": "Belgium",
       "kickoff_utc": "2026-07-10T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-09T23:42:27.468841+00:00"
+      "captured_at": "2026-07-10T00:09:06.515684+00:00"
     },
     {
       "scoreline": "1-1",
@@ -76,7 +76,43 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-09T23:42:27.468841+00:00"
+      "captured_at": "2026-07-10T00:09:06.515684+00:00"
+    },
+    {
+      "scoreline": "1-0",
+      "p_scoreline": 0.1448,
+      "p_home": 0.5675,
+      "p_draw": 0.2633,
+      "p_away": 0.1692,
+      "xg_home": 1.6,
+      "xg_away": 0.76,
+      "top_scorelines": [
+        [
+          "1-0",
+          0.1448
+        ],
+        [
+          "1-1",
+          0.1217
+        ],
+        [
+          "2-0",
+          0.1211
+        ],
+        [
+          "0-0",
+          0.1018
+        ]
+      ],
+      "residual": 0.0095,
+      "verdict": "BET",
+      "date": "2026-07-12",
+      "match_id": 1632393311,
+      "home": "Argentina",
+      "away": "Switzerland",
+      "kickoff_utc": "2026-07-12T01:00:00+00:00",
+      "is_closing": false,
+      "captured_at": "2026-07-10T00:09:06.515684+00:00"
     }
   ]
 }
