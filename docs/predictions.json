@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:26:53.219162+00:00",
+  "generated_at": "2026-07-11T15:47:53.815033+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,20 +8,20 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1167,
-      "p_home": 0.2569,
-      "p_draw": 0.2489,
-      "p_away": 0.4942,
+      "p_scoreline": 0.1166,
+      "p_home": 0.2561,
+      "p_draw": 0.2487,
+      "p_away": 0.4952,
       "xg_home": 1.2,
-      "xg_away": 1.74,
+      "xg_away": 1.75,
       "top_scorelines": [
         [
           "1-1",
-          0.1167
+          0.1166
         ],
         [
           "1-2",
-          0.096
+          0.0961
         ],
         [
           "0-1",
@@ -29,10 +29,10 @@
         ],
         [
           "0-2",
-          0.0798
+          0.08
         ]
       ],
-      "residual": 0.0086,
+      "residual": 0.0077,
       "verdict": "BET",
       "date": "2026-07-11",
       "match_id": 1632351958,
@@ -40,35 +40,35 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T15:26:53.219162+00:00"
+      "captured_at": "2026-07-11T15:47:53.815033+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1506,
-      "p_home": 0.5738,
-      "p_draw": 0.264,
-      "p_away": 0.1622,
-      "xg_home": 1.59,
-      "xg_away": 0.72,
+      "p_scoreline": 0.1498,
+      "p_home": 0.5662,
+      "p_draw": 0.2666,
+      "p_away": 0.1672,
+      "xg_home": 1.57,
+      "xg_away": 0.74,
       "top_scorelines": [
         [
           "1-0",
-          0.1506
+          0.1498
         ],
         [
           "2-0",
-          0.1249
+          0.1229
         ],
         [
           "1-1",
-          0.1208
+          0.1221
         ],
         [
           "0-0",
-          0.1061
+          0.1068
         ]
       ],
-      "residual": 0.0081,
+      "residual": 0.0083,
       "verdict": "BET",
       "date": "2026-07-12",
       "match_id": 1632393311,
@@ -76,7 +76,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T15:26:53.219162+00:00"
+      "captured_at": "2026-07-11T15:47:53.815033+00:00"
     }
   ]
 }
