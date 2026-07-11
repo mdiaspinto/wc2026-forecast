@@ -1,47 +1,11 @@
 {
-  "generated_at": "2026-07-11T20:55:00.000159+00:00",
+  "generated_at": "2026-07-11T21:08:55.073799+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "lead_minutes": 5,
   "matches": [
-    {
-      "scoreline": "1-1",
-      "p_scoreline": 0.1164,
-      "p_home": 0.2163,
-      "p_draw": 0.2453,
-      "p_away": 0.5385,
-      "xg_home": 1.06,
-      "xg_away": 1.79,
-      "top_scorelines": [
-        [
-          "1-1",
-          0.1164
-        ],
-        [
-          "1-2",
-          0.0982
-        ],
-        [
-          "0-1",
-          0.0972
-        ],
-        [
-          "0-2",
-          0.0929
-        ]
-      ],
-      "residual": 0.0086,
-      "verdict": "BET",
-      "date": "2026-07-11",
-      "match_id": 1632351958,
-      "home": "Norway",
-      "away": "England",
-      "kickoff_utc": "2026-07-11T21:00:00+00:00",
-      "is_closing": true,
-      "captured_at": "2026-07-11T20:55:00.307315+00:00"
-    },
     {
       "scoreline": "1-0",
       "p_scoreline": 0.1495,
@@ -76,7 +40,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T20:55:00.000159+00:00"
+      "captured_at": "2026-07-11T21:08:55.073799+00:00"
     }
   ]
 }
