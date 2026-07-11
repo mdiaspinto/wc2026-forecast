@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T20:27:51.506227+00:00",
+  "generated_at": "2026-07-11T20:55:07.066455+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -401,6 +401,19 @@
       "exact_hit": false,
       "result_hit": false,
       "captured_at": "2026-07-10T18:59:37.370011+00:00"
+    },
+    {
+      "date": "2026-07-11",
+      "home": "Norway",
+      "away": "England",
+      "kickoff_utc": "2026-07-11T21:00:00Z",
+      "predicted": "1-1",
+      "p_predicted": 0.1164,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-07-11T20:55:00.307315+00:00"
     }
   ],
   "knockouts": [
