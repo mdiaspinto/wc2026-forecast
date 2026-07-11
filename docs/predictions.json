@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T10:43:23.069992+00:00",
+  "generated_at": "2026-07-11T11:10:07.317978+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,16 +8,16 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1158,
-      "p_home": 0.2482,
-      "p_draw": 0.2469,
-      "p_away": 0.505,
+      "p_scoreline": 0.1159,
+      "p_home": 0.248,
+      "p_draw": 0.247,
+      "p_away": 0.5049,
       "xg_home": 1.18,
       "xg_away": 1.77,
       "top_scorelines": [
         [
           "1-1",
-          0.1158
+          0.1159
         ],
         [
           "1-2",
@@ -25,11 +25,11 @@
         ],
         [
           "0-1",
-          0.0857
+          0.0859
         ],
         [
           "0-2",
-          0.0817
+          0.0818
         ]
       ],
       "residual": 0.0078,
@@ -40,7 +40,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T10:43:23.069992+00:00"
+      "captured_at": "2026-07-11T11:10:07.317978+00:00"
     },
     {
       "scoreline": "1-0",
@@ -76,7 +76,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T10:43:23.069992+00:00"
+      "captured_at": "2026-07-11T11:10:07.317978+00:00"
     }
   ]
 }
