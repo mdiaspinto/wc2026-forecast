@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:47:53.815033+00:00",
+  "generated_at": "2026-07-11T16:10:29.578287+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,16 +8,16 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1166,
-      "p_home": 0.2561,
-      "p_draw": 0.2487,
-      "p_away": 0.4952,
+      "p_scoreline": 0.1169,
+      "p_home": 0.2563,
+      "p_draw": 0.2492,
+      "p_away": 0.4945,
       "xg_home": 1.2,
-      "xg_away": 1.75,
+      "xg_away": 1.74,
       "top_scorelines": [
         [
           "1-1",
-          0.1166
+          0.1169
         ],
         [
           "1-2",
@@ -25,14 +25,14 @@
         ],
         [
           "0-1",
-          0.0849
+          0.0854
         ],
         [
           "0-2",
-          0.08
+          0.0802
         ]
       ],
-      "residual": 0.0077,
+      "residual": 0.0082,
       "verdict": "BET",
       "date": "2026-07-11",
       "match_id": 1632351958,
@@ -40,24 +40,24 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T15:47:53.815033+00:00"
+      "captured_at": "2026-07-11T16:10:29.578287+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1498,
-      "p_home": 0.5662,
-      "p_draw": 0.2666,
-      "p_away": 0.1672,
+      "p_scoreline": 0.1496,
+      "p_home": 0.5658,
+      "p_draw": 0.2667,
+      "p_away": 0.1675,
       "xg_home": 1.57,
       "xg_away": 0.74,
       "top_scorelines": [
         [
           "1-0",
-          0.1498
+          0.1496
         ],
         [
           "2-0",
-          0.1229
+          0.1228
         ],
         [
           "1-1",
@@ -65,10 +65,10 @@
         ],
         [
           "0-0",
-          0.1068
+          0.1067
         ]
       ],
-      "residual": 0.0083,
+      "residual": 0.0068,
       "verdict": "BET",
       "date": "2026-07-12",
       "match_id": 1632393311,
@@ -76,7 +76,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T15:47:53.815033+00:00"
+      "captured_at": "2026-07-11T16:10:29.578287+00:00"
     }
   ]
 }
