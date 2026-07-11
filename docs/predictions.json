@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T14:14:30.826962+00:00",
+  "generated_at": "2026-07-11T14:37:40.063444+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -9,9 +9,9 @@
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1162,
-      "p_home": 0.2503,
-      "p_draw": 0.2477,
-      "p_away": 0.502,
+      "p_home": 0.2509,
+      "p_draw": 0.2478,
+      "p_away": 0.5014,
       "xg_home": 1.19,
       "xg_away": 1.76,
       "top_scorelines": [
@@ -29,10 +29,10 @@
         ],
         [
           "0-2",
-          0.0814
+          0.0813
         ]
       ],
-      "residual": 0.0082,
+      "residual": 0.0086,
       "verdict": "BET",
       "date": "2026-07-11",
       "match_id": 1632351958,
@@ -40,35 +40,35 @@
       "away": "England",
       "kickoff_utc": "2026-07-11T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T14:14:30.826962+00:00"
+      "captured_at": "2026-07-11T14:37:40.063444+00:00"
     },
     {
       "scoreline": "1-0",
-      "p_scoreline": 0.1498,
-      "p_home": 0.5751,
-      "p_draw": 0.263,
-      "p_away": 0.1619,
-      "xg_home": 1.59,
-      "xg_away": 0.73,
+      "p_scoreline": 0.1477,
+      "p_home": 0.5659,
+      "p_draw": 0.2655,
+      "p_away": 0.1685,
+      "xg_home": 1.58,
+      "xg_away": 0.74,
       "top_scorelines": [
         [
           "1-0",
-          0.1498
-        ],
-        [
-          "2-0",
-          0.1249
+          0.1477
         ],
         [
           "1-1",
-          0.1205
+          0.1221
+        ],
+        [
+          "2-0",
+          0.122
         ],
         [
           "0-0",
-          0.105
+          0.1049
         ]
       ],
-      "residual": 0.007,
+      "residual": 0.0082,
       "verdict": "BET",
       "date": "2026-07-12",
       "match_id": 1632393311,
@@ -76,7 +76,7 @@
       "away": "Switzerland",
       "kickoff_utc": "2026-07-12T01:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-11T14:14:30.826962+00:00"
+      "captured_at": "2026-07-11T14:37:40.063444+00:00"
     }
   ]
 }
