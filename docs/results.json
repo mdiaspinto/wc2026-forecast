@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T23:59:01.127042+00:00",
+  "generated_at": "2026-07-12T00:55:06.170145+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -414,6 +414,19 @@
       "exact_hit": false,
       "result_hit": false,
       "captured_at": "2026-07-11T20:55:00.307315+00:00"
+    },
+    {
+      "date": "2026-07-12",
+      "home": "Argentina",
+      "away": "Switzerland",
+      "kickoff_utc": "2026-07-12T01:00:00Z",
+      "predicted": "1-0",
+      "p_predicted": 0.1472,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-07-12T00:55:00.092572+00:00"
     }
   ],
   "knockouts": [

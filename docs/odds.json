@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-07-11T23:58:54.320228+00:00",
+  "generated_at": "2026-07-12T00:55:00.786999+00:00",
   "source": "pinnacle/outright",
   "league": 2686,
   "oddsByEn": {
-    "Argentina": 450,
-    "England": 498,
+    "Argentina": 475,
+    "England": 325,
     "France": 155,
-    "Norway": 1500,
     "Spain": 325,
     "Switzerland": 4000
   },
@@ -14,7 +13,6 @@
     "Argentina",
     "England",
     "France",
-    "Norway",
     "Spain",
     "Switzerland"
   ]
