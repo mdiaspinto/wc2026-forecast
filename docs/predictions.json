@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T23:57:17.217829+00:00",
+  "generated_at": "2026-07-13T00:36:33.125298+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1295,
-      "p_home": 0.4222,
-      "p_draw": 0.2719,
-      "p_away": 0.306,
-      "xg_home": 1.46,
-      "xg_away": 1.21,
+      "p_scoreline": 0.1297,
+      "p_home": 0.4182,
+      "p_draw": 0.2723,
+      "p_away": 0.3095,
+      "xg_home": 1.45,
+      "xg_away": 1.22,
       "top_scorelines": [
         [
           "1-1",
-          0.1295
+          0.1297
         ],
         [
           "1-0",
-          0.0935
+          0.0931
         ],
         [
           "2-1",
-          0.0894
+          0.089
         ],
         [
-          "0-0",
-          0.0763
+          "0-1",
+          0.0768
         ]
       ],
-      "residual": 0.0152,
+      "residual": 0.0151,
       "verdict": "BET",
       "date": "2026-07-14",
       "match_id": 1632431962,
@@ -40,7 +40,43 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-14T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-12T23:57:17.217829+00:00"
+      "captured_at": "2026-07-13T00:36:33.125298+00:00"
+    },
+    {
+      "scoreline": "1-1",
+      "p_scoreline": 0.1409,
+      "p_home": 0.3716,
+      "p_draw": 0.3015,
+      "p_away": 0.3269,
+      "xg_home": 1.18,
+      "xg_away": 1.09,
+      "top_scorelines": [
+        [
+          "1-1",
+          0.1409
+        ],
+        [
+          "1-0",
+          0.1139
+        ],
+        [
+          "0-0",
+          0.1113
+        ],
+        [
+          "0-1",
+          0.1047
+        ]
+      ],
+      "residual": 0.013,
+      "verdict": "BET",
+      "date": "2026-07-15",
+      "match_id": 1632485246,
+      "home": "England",
+      "away": "Argentina",
+      "kickoff_utc": "2026-07-15T19:00:00+00:00",
+      "is_closing": false,
+      "captured_at": "2026-07-13T00:36:33.125298+00:00"
     }
   ]
 }
