@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T08:52:06.397401+00:00",
+  "generated_at": "2026-07-13T10:00:50.288434+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -40,14 +40,14 @@
       "away": "Spain",
       "kickoff_utc": "2026-07-14T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-13T08:52:06.397401+00:00"
+      "captured_at": "2026-07-13T10:00:50.288434+00:00"
     },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1397,
-      "p_home": 0.3763,
+      "p_home": 0.3765,
       "p_draw": 0.2969,
-      "p_away": 0.3268,
+      "p_away": 0.3266,
       "xg_home": 1.22,
       "xg_away": 1.11,
       "top_scorelines": [
@@ -65,7 +65,7 @@
         ],
         [
           "0-1",
-          0.1006
+          0.1005
         ]
       ],
       "residual": 0.0149,
@@ -76,7 +76,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-13T08:52:06.397401+00:00"
+      "captured_at": "2026-07-13T10:00:50.288434+00:00"
     }
   ]
 }
