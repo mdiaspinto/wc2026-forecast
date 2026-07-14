@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T18:02:21.589364+00:00",
+  "generated_at": "2026-07-14T18:32:43.708724+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,46 +8,46 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1273,
-      "p_home": 0.3922,
-      "p_draw": 0.2684,
-      "p_away": 0.3394,
-      "xg_home": 1.44,
-      "xg_away": 1.33,
+      "p_scoreline": 0.1291,
+      "p_home": 0.396,
+      "p_draw": 0.2715,
+      "p_away": 0.3325,
+      "xg_home": 1.42,
+      "xg_away": 1.29,
       "top_scorelines": [
         [
           "1-1",
-          0.1273
-        ],
-        [
-          "2-1",
-          0.0866
+          0.1291
         ],
         [
           "1-0",
-          0.0834
+          0.0874
+        ],
+        [
+          "2-1",
+          0.0868
         ],
         [
           "1-2",
-          0.0796
+          0.0783
         ]
       ],
-      "residual": 0.0208,
-      "verdict": "CAUTION",
+      "residual": 0.0199,
+      "verdict": "BET",
       "date": "2026-07-14",
       "match_id": 1632431962,
       "home": "France",
       "away": "Spain",
       "kickoff_utc": "2026-07-14T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-14T18:02:21.589364+00:00"
+      "captured_at": "2026-07-14T18:32:43.708724+00:00"
     },
     {
       "scoreline": "1-1",
       "p_scoreline": 0.1404,
-      "p_home": 0.3734,
+      "p_home": 0.3728,
       "p_draw": 0.2997,
-      "p_away": 0.3269,
+      "p_away": 0.3275,
       "xg_home": 1.19,
       "xg_away": 1.1,
       "top_scorelines": [
@@ -57,7 +57,7 @@
         ],
         [
           "1-0",
-          0.1125
+          0.1124
         ],
         [
           "0-0",
@@ -65,7 +65,7 @@
         ],
         [
           "0-1",
-          0.103
+          0.1031
         ]
       ],
       "residual": 0.0138,
@@ -76,7 +76,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-14T18:02:21.589364+00:00"
+      "captured_at": "2026-07-14T18:32:43.708724+00:00"
     }
   ]
 }
