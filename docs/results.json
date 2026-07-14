@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T18:32:53.880476+00:00",
+  "generated_at": "2026-07-14T18:57:40.642245+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -427,6 +427,19 @@
       "exact_hit": false,
       "result_hit": true,
       "captured_at": "2026-07-12T00:55:00.092572+00:00"
+    },
+    {
+      "date": "2026-07-14",
+      "home": "France",
+      "away": "Spain",
+      "kickoff_utc": "2026-07-14T19:00:00Z",
+      "predicted": "1-1",
+      "p_predicted": 0.1296,
+      "actual": null,
+      "status": "pre",
+      "exact_hit": null,
+      "result_hit": null,
+      "captured_at": "2026-07-14T18:57:33.928407+00:00"
     }
   ],
   "knockouts": [
