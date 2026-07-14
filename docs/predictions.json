@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T18:57:33.749364+00:00",
+  "generated_at": "2026-07-14T19:32:28.957204+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,67 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1296,
-      "p_home": 0.3882,
-      "p_draw": 0.2725,
-      "p_away": 0.3393,
-      "xg_home": 1.4,
-      "xg_away": 1.3,
+      "p_scoreline": 0.1408,
+      "p_home": 0.3579,
+      "p_draw": 0.3008,
+      "p_away": 0.3412,
+      "xg_home": 1.16,
+      "xg_away": 1.12,
       "top_scorelines": [
         [
           "1-1",
-          0.1296
+          0.1408
         ],
         [
           "1-0",
-          0.087
-        ],
-        [
-          "2-1",
-          0.0858
-        ],
-        [
-          "0-1",
-          0.0798
-        ]
-      ],
-      "residual": 0.0222,
-      "verdict": "CAUTION",
-      "date": "2026-07-14",
-      "match_id": 1632431962,
-      "home": "France",
-      "away": "Spain",
-      "kickoff_utc": "2026-07-14T19:00:00+00:00",
-      "is_closing": true,
-      "captured_at": "2026-07-14T18:57:33.928407+00:00"
-    },
-    {
-      "scoreline": "1-1",
-      "p_scoreline": 0.1404,
-      "p_home": 0.3728,
-      "p_draw": 0.2997,
-      "p_away": 0.3275,
-      "xg_home": 1.19,
-      "xg_away": 1.1,
-      "top_scorelines": [
-        [
-          "1-1",
-          0.1404
-        ],
-        [
-          "1-0",
-          0.1124
+          0.1101
         ],
         [
           "0-0",
-          0.1089
+          0.1099
         ],
         [
           "0-1",
-          0.1031
+          0.1067
         ]
       ],
-      "residual": 0.0138,
+      "residual": 0.0156,
       "verdict": "BET",
       "date": "2026-07-15",
       "match_id": 1632485246,
@@ -76,7 +40,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-14T18:57:33.749364+00:00"
+      "captured_at": "2026-07-14T19:32:28.957204+00:00"
     }
   ]
 }
