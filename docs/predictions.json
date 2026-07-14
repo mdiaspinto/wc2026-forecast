@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T23:12:59.175939+00:00",
+  "generated_at": "2026-07-14T23:33:36.657463+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -40,7 +40,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-14T23:12:59.175939+00:00"
+      "captured_at": "2026-07-14T23:33:36.657463+00:00"
     }
   ]
 }
