@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-15T20:42:22.721202+00:00",
+  "generated_at": "2026-07-15T21:08:27.222027+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "summary": {
-    "graded": 32,
+    "graded": 33,
     "exact": 3,
-    "exact_pct": 9.4,
+    "exact_pct": 9.1,
     "result": 20,
-    "result_pct": 62.5
+    "result_pct": 60.6
   },
   "matches": [
     {
@@ -448,10 +448,10 @@
       "kickoff_utc": "2026-07-15T19:00:00Z",
       "predicted": "1-1",
       "p_predicted": 0.1416,
-      "actual": null,
-      "status": "in",
-      "exact_hit": null,
-      "result_hit": null,
+      "actual": "1-2",
+      "status": "post",
+      "exact_hit": false,
+      "result_hit": false,
       "captured_at": "2026-07-15T18:56:42.456359+00:00"
     }
   ],
@@ -658,6 +658,13 @@
       "away": "Spain",
       "score": "0-2",
       "winner": "Spain"
+    },
+    {
+      "date": "2026-07-15",
+      "home": "England",
+      "away": "Argentina",
+      "score": "1-2",
+      "winner": "Argentina"
     }
   ]
 }
