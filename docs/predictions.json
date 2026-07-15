@@ -1,46 +1,9 @@
 {
-  "generated_at": "2026-07-15T18:56:42.027774+00:00",
+  "generated_at": "2026-07-15T19:28:32.152465+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "lead_minutes": 5,
-  "matches": [
-    {
-      "scoreline": "1-1",
-      "p_scoreline": 0.1416,
-      "p_home": 0.3656,
-      "p_draw": 0.3051,
-      "p_away": 0.3292,
-      "xg_home": 1.15,
-      "xg_away": 1.08,
-      "top_scorelines": [
-        [
-          "1-1",
-          0.1416
-        ],
-        [
-          "1-0",
-          0.1161
-        ],
-        [
-          "0-0",
-          0.1161
-        ],
-        [
-          "0-1",
-          0.1083
-        ]
-      ],
-      "residual": 0.0149,
-      "verdict": "BET",
-      "date": "2026-07-15",
-      "match_id": 1632485246,
-      "home": "England",
-      "away": "Argentina",
-      "kickoff_utc": "2026-07-15T19:00:00+00:00",
-      "is_closing": true,
-      "captured_at": "2026-07-15T18:56:42.456359+00:00"
-    }
-  ]
+  "matches": []
 }
