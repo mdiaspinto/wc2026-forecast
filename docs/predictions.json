@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T17:34:26.471425+00:00",
+  "generated_at": "2026-07-15T18:00:09.591345+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,31 +8,31 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.1418,
-      "p_home": 0.3739,
-      "p_draw": 0.3067,
-      "p_away": 0.3194,
+      "p_scoreline": 0.1419,
+      "p_home": 0.3701,
+      "p_draw": 0.3073,
+      "p_away": 0.3226,
       "xg_home": 1.15,
       "xg_away": 1.05,
       "top_scorelines": [
         [
           "1-1",
-          0.1418
+          0.1419
         ],
         [
           "1-0",
-          0.1198
+          0.1194
         ],
         [
           "0-0",
-          0.1187
+          0.1193
         ],
         [
           "0-1",
-          0.1078
+          0.1089
         ]
       ],
-      "residual": 0.0134,
+      "residual": 0.0145,
       "verdict": "BET",
       "date": "2026-07-15",
       "match_id": 1632485246,
@@ -40,7 +40,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-15T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-15T17:34:26.471425+00:00"
+      "captured_at": "2026-07-15T18:00:09.591345+00:00"
     }
   ]
 }
