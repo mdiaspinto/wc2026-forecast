@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T18:56:58.762381+00:00",
+  "generated_at": "2026-07-16T19:28:39.255573+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -9,9 +9,9 @@
     {
       "scoreline": "1-1",
       "p_scoreline": 0.0979,
-      "p_home": 0.5127,
+      "p_home": 0.5128,
       "p_draw": 0.2263,
-      "p_away": 0.261,
+      "p_away": 0.2608,
       "xg_home": 2.02,
       "xg_away": 1.4,
       "top_scorelines": [
@@ -40,7 +40,7 @@
       "away": "England",
       "kickoff_utc": "2026-07-18T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-16T18:56:58.762381+00:00"
+      "captured_at": "2026-07-16T19:28:39.255573+00:00"
     }
   ]
 }
