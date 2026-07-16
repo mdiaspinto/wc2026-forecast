@@ -1,9 +1,46 @@
 {
-  "generated_at": "2026-07-15T23:50:21.336406+00:00",
+  "generated_at": "2026-07-16T00:11:54.282806+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
   },
   "lead_minutes": 5,
-  "matches": []
+  "matches": [
+    {
+      "scoreline": "1-1",
+      "p_scoreline": 0.1043,
+      "p_home": 0.5028,
+      "p_draw": 0.2337,
+      "p_away": 0.2635,
+      "xg_home": 1.92,
+      "xg_away": 1.35,
+      "top_scorelines": [
+        [
+          "1-1",
+          0.1043
+        ],
+        [
+          "2-1",
+          0.0946
+        ],
+        [
+          "2-0",
+          0.0701
+        ],
+        [
+          "1-0",
+          0.067
+        ]
+      ],
+      "residual": 0.0109,
+      "verdict": "BET",
+      "date": "2026-07-18",
+      "match_id": 1632548666,
+      "home": "France",
+      "away": "England",
+      "kickoff_utc": "2026-07-18T21:00:00+00:00",
+      "is_closing": false,
+      "captured_at": "2026-07-16T00:11:54.282806+00:00"
+    }
+  ]
 }
