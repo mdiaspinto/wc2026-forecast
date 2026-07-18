@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T18:32:04.965792+00:00",
+  "generated_at": "2026-07-18T18:53:10.977381+00:00",
   "model": {
     "devig_method": "shin",
     "rho": -0.06
@@ -8,16 +8,16 @@
   "matches": [
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.0965,
-      "p_home": 0.5341,
-      "p_draw": 0.2225,
-      "p_away": 0.2434,
+      "p_scoreline": 0.0966,
+      "p_home": 0.5333,
+      "p_draw": 0.2226,
+      "p_away": 0.2441,
       "xg_home": 2.07,
       "xg_away": 1.36,
       "top_scorelines": [
         [
           "1-1",
-          0.0965
+          0.0966
         ],
         [
           "2-1",
@@ -25,7 +25,7 @@
         ],
         [
           "2-0",
-          0.0695
+          0.0694
         ],
         [
           "3-1",
@@ -40,35 +40,35 @@
       "away": "England",
       "kickoff_utc": "2026-07-18T21:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-18T18:32:04.965792+00:00"
+      "captured_at": "2026-07-18T18:53:10.977381+00:00"
     },
     {
       "scoreline": "1-1",
-      "p_scoreline": 0.137,
-      "p_home": 0.4345,
-      "p_draw": 0.2914,
-      "p_away": 0.2741,
-      "xg_home": 1.33,
-      "xg_away": 1.01,
+      "p_scoreline": 0.1367,
+      "p_home": 0.4385,
+      "p_draw": 0.2908,
+      "p_away": 0.2707,
+      "xg_home": 1.34,
+      "xg_away": 1.0,
       "top_scorelines": [
         [
           "1-1",
-          0.137
+          0.1367
         ],
         [
           "1-0",
-          0.1207
+          0.1213
         ],
         [
           "0-0",
-          0.104
+          0.1038
         ],
         [
           "0-1",
-          0.0891
+          0.0882
         ]
       ],
-      "residual": 0.0141,
+      "residual": 0.0142,
       "verdict": "BET",
       "date": "2026-07-19",
       "match_id": 1632548671,
@@ -76,7 +76,7 @@
       "away": "Argentina",
       "kickoff_utc": "2026-07-19T19:00:00+00:00",
       "is_closing": false,
-      "captured_at": "2026-07-18T18:32:04.965792+00:00"
+      "captured_at": "2026-07-18T18:53:10.977381+00:00"
     }
   ]
 }
